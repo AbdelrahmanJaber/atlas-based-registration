@@ -1,0 +1,36 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Conda and environment
+.env
+.venv
+env/
+venv/
+*.env
+*.conda
+*.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Data & logs
+*.nii
+*.nii.gz
+*.h5
+*.ckpt
+*.log
+logs/
+checkpoints/
+results/
+
+# Jupyter
+.ipynb_checkpoints
+
+# System files
+.DS_Store
+Thumbs.db
+
+# datasets
+data/
