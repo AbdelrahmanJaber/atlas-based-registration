@@ -1,4 +1,4 @@
-# Atlas Based Registeration Project – Inter-patient POI Transfer
+## Atlas Based Registeration Project – Inter-patient POI Transfer
 
 This project focuses on registering inter-patient full-body CT scans to transfer Points of Interest (POIs) from 
 known subjects to new ones. These POIs can be used to plan surgical guides or to define forces in biomechanical simulations.
@@ -7,8 +7,9 @@ We will work with a dataset of ~300 CT scans and develop baseline registration m
 
 ---
 
-# Project Structure
+## Project Structure
 
+```
 atlas_based_registeration/
 ├── data/
 │   ├── dataset-myelom/         # Original dataset
@@ -45,3 +46,4 @@ atlas_based_registeration/
 ├── main.py               # Entry point for experiments (uses configs)
 ├── requirements.txt      # Python dependencies
 └── README.md             # Project overview (this file)
+```
