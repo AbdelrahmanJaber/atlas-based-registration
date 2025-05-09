@@ -21,9 +21,6 @@ venv/
 *.h5
 *.ckpt
 *.log
-logs/
-checkpoints/
-results/
 
 # Jupyter
 .ipynb_checkpoints
