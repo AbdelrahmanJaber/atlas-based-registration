@@ -1,4 +1,4 @@
-## Atlas Based Registeration Project – Inter-patient POI Transfer
+## Atlas Based Registration Project – Inter-patient POI Transfer
 
 This project focuses on registering inter-patient full-body CT scans to transfer Points of Interest (POIs) from 
 known subjects to new ones. These POIs can be used to plan surgical guides or to define forces in biomechanical simulations.

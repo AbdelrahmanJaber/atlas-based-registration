@@ -31,3 +31,10 @@ Thumbs.db
 
 # datasets
 data/
+
+# results
+results/
+
+
+TPTBox/
+TotalVibeSegmentator/
