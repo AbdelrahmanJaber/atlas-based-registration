@@ -214,21 +214,27 @@ if __name__=="__main__":
     parser.add_argument('--learning_rate', type=float, default=training_params['learning_rate'], help='Learning rate (default: 0.0001)')
     parser.add_argument('--loss', type=str, default=training_params['loss'], help='Loss Func')
     parser.add_argument('--loss_weight', type=float, default=training_params['loss_weight'], help='Smoothness Loss Weight')
-    parser.add_argument('--images_path', type=str, default=training_params['images_path'], help='Path to npy file containing the MRI scans as numpy array')
+    parser.add_argument('--raw_path', type=str, default=training_params['raw_path'], help='Path to npy file containing the MRI scans as numpy array')
     parser.add_argument('--seg_path', type=str, default=training_params['seg_path'], help='Path to npy file containing the segmentation masks as numpy array')
     parser.add_argument('--weights_path', type=str, default=training_params['weights_path'], help='Path to save model weights')
 
     args = parser.parse_args()
 
     # Set the device
+    print("Checking for CUDA availability...")
+    print("CUDA available:", torch.cuda.is_available())
+    print("CUDA devices:", torch.cuda.device_count())
+    print("CUDA device names:", [torch.cuda.get_device_name(i) for i in range(torch.cuda.device_count())])
+    print("CUDA visible devices:", cuda_visible_devices())
     device = torch.device("cuda" if torch.cuda.is_available() and cuda_visible_devices() else "cpu")
+    print(device)
     os.environ["CUDA_VISIBLE_DEVICES"] = "0"
     
     # Set up logging
     logging.basicConfig(filename=log_dir+'/'+datetime.datetime.now().strftime("%Y%m%d-%H%M%S")+'.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
     # Log the parameters
-    logging.info(f'Data Path: {args.images_path}')
+    logging.info(f'Data Path: {args.raw_path}')
     logging.info(f'Seg Path: {args.seg_path}')
     logging.info(f'Epoch: {args.nb_epochs}')
     logging.info(f'Learning Rate: {args.learning_rate}')
@@ -236,16 +242,16 @@ if __name__=="__main__":
     logging.info(f'Loss Weight: {args.loss_weight}')
 
     # Create the dataset
-    data = np.load(args.images_path)
+#    data = np.load(args.images_path)
 
     # Split the dataset into training, validation, and test sets
     if  args.seg_path.lower() != 'none':
-        seg_data = np.load(args.seg_path)
-        dataset = CustomDataset(data, seg_data, transform=None)
+#        seg_data = np.load(args.seg_path)
+        dataset = OwnDataset(args.raw_path, args.seg_path, transform=None)
         auxiliary_data = True
 
     else:
-        dataset = CustomDataset(data, transform=None)
+        dataset = OwnDataset(args.raw_path, transform=None)
         auxiliary_data = False
 
     x_train, x_other = train_test_split(dataset, test_size=args.train_val_split, random_state=42)
