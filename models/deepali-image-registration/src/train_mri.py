@@ -25,7 +25,7 @@ from classes.model import VoxelMorph
 from classes.own_dataset import OwnDataset
 from classes.losses import VoxelMorphLoss, VoxelMorphDataLoss, VoxelMorphSegLoss
 
-
+print("i'm doing stuff")
 log_dir = "deepali_vxl/runs/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S") # TensorBoard log directory
 writer = SummaryWriter(log_dir=log_dir) # Create a SummaryWriter object
 
@@ -236,16 +236,16 @@ if __name__=="__main__":
     logging.info(f'Loss Weight: {args.loss_weight}')
 
     # Create the dataset
-    data = np.load(args.images_path)
+    # data = np.load(args.images_path, allow_pickle=True)
 
     # Split the dataset into training, validation, and test sets
     if  args.seg_path.lower() != 'none':
-        seg_data = np.load(args.seg_path)
-        dataset = CustomDataset(data, seg_data, transform=None)
+        # seg_data = np.load(args.seg_path, allow_pickle=True)
+        dataset = OwnDataset(args.images_path, args.seg_path, transform=None)
         auxiliary_data = True
 
     else:
-        dataset = CustomDataset(data, transform=None)
+        dataset = OwnDataset(args.images_path, transform=None)
         auxiliary_data = False
 
     x_train, x_other = train_test_split(dataset, test_size=args.train_val_split, random_state=42)
