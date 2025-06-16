@@ -22,9 +22,9 @@ from sklearn.model_selection import train_test_split
 
 from classes.metrics import ImageMetrics
 from classes.model import VoxelMorph
-from classes.own_dataset import OwnDataset
+from classes.dataset import CustomDataset
 from classes.losses import VoxelMorphLoss, VoxelMorphDataLoss, VoxelMorphSegLoss
-
+from tqdm import tqdm
 
 log_dir = "deepali_vxl/runs/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S") # TensorBoard log directory
 writer = SummaryWriter(log_dir=log_dir) # Create a SummaryWriter object
@@ -62,7 +62,8 @@ def train(model, train_loader, val_loader, optimizer, loss_func, smoothness_weig
     for epoch in range(num_epochs):
         model.train()
         epoch_train_loss = 0
-        for batch_idx, data in enumerate(train_loader): # Iterate over the training data
+        # tqdm is used to show a progress bar for the training loop
+        for batch_idx, data in tqdm(enumerate(train_loader), total=len(train_loader), desc=f'Epoch {epoch + 1}/{num_epochs}', unit='batch'):
             optimizer.zero_grad() # Zero the gradients
 
             if seg:
@@ -82,6 +83,7 @@ def train(model, train_loader, val_loader, optimizer, loss_func, smoothness_weig
             epoch_train_loss += loss.item()
             
             writer.add_scalar('Loss/train', loss.item(), epoch * len(train_loader) + batch_idx) # Log the loss
+            print(f'Train Epoch: {epoch + 1} [{batch_idx * len(source)}/{len(train_loader.dataset)} ({100. * batch_idx / len(train_loader):.0f}%)]\tLoss: {loss.item():.6f}') # Print the loss
         
         avg_train_loss_message = f'====> Epoch: {epoch + 1} Average training loss: {epoch_train_loss / len(train_loader):.6f}'
         logging.info(avg_train_loss_message) # Log the average training loss
@@ -130,9 +132,9 @@ def test(model, test_loader, loss_func, loss_weight, metrics, device, seg=False)
     global_step = 0
 
     with torch.no_grad(): # Disable gradient computation for testing
-        for batch_idx, data in enumerate(test_loader): # Iterate over the test data
-            
-            if seg: 
+        # tqdm is used to show a progress bar for the testing loop
+        for batch_idx, data in tqdm(enumerate(test_loader), total=len(test_loader), desc='Testing', unit='batch'):
+            if seg:
                 source, target, source_seg, target_seg = data
                 source, target, source_seg, target_seg = source.to(device), target.to(device), source_seg.to(device), target_seg.to(device)
                 transformed, flow, transformed_seg = model((source, source_seg), target) # Forward pass
@@ -214,7 +216,7 @@ if __name__=="__main__":
     parser.add_argument('--learning_rate', type=float, default=training_params['learning_rate'], help='Learning rate (default: 0.0001)')
     parser.add_argument('--loss', type=str, default=training_params['loss'], help='Loss Func')
     parser.add_argument('--loss_weight', type=float, default=training_params['loss_weight'], help='Smoothness Loss Weight')
-    parser.add_argument('--raw_path', type=str, default=training_params['raw_path'], help='Path to npy file containing the MRI scans as numpy array')
+    parser.add_argument('--images_path', type=str, default=training_params['images_path'], help='Path to npy file containing the MRI scans as numpy array')
     parser.add_argument('--seg_path', type=str, default=training_params['seg_path'], help='Path to npy file containing the segmentation masks as numpy array')
     parser.add_argument('--weights_path', type=str, default=training_params['weights_path'], help='Path to save model weights')
 
@@ -234,7 +236,7 @@ if __name__=="__main__":
     logging.basicConfig(filename=log_dir+'/'+datetime.datetime.now().strftime("%Y%m%d-%H%M%S")+'.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
     # Log the parameters
-    logging.info(f'Data Path: {args.raw_path}')
+    logging.info(f'Data Path: {args.images_path}')
     logging.info(f'Seg Path: {args.seg_path}')
     logging.info(f'Epoch: {args.nb_epochs}')
     logging.info(f'Learning Rate: {args.learning_rate}')
@@ -242,16 +244,16 @@ if __name__=="__main__":
     logging.info(f'Loss Weight: {args.loss_weight}')
 
     # Create the dataset
-#    data = np.load(args.images_path)
+    data = np.load(args.images_path)
 
     # Split the dataset into training, validation, and test sets
     if  args.seg_path.lower() != 'none':
-#        seg_data = np.load(args.seg_path)
-        dataset = OwnDataset(args.raw_path, args.seg_path, transform=None)
+        seg_data = np.load(args.seg_path)
+        dataset = CustomDataset(data, seg_data, transform=None)
         auxiliary_data = True
 
     else:
-        dataset = OwnDataset(args.raw_path, transform=None)
+        dataset = CustomDataset(data, transform=None)
         auxiliary_data = False
 
     x_train, x_other = train_test_split(dataset, test_size=args.train_val_split, random_state=42)

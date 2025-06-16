@@ -54,6 +54,10 @@ class CustomDataset(Dataset):
             moving_seg = torch.from_numpy(moving_seg).float()
             fixed_seg = torch.from_numpy(fixed_seg).float()
 
+            print(f"Moving image shape: {moving_img.shape}, Fixed image shape: {fixed_img.shape}")
+            print(f"Moving segmentation shape: {moving_seg.shape}, Fixed segmentation shape: {fixed_seg.shape}")
+
             return moving_img, fixed_img, moving_seg, fixed_seg
         else:
+            print(f"Moving image shape: {moving_img.shape}, Fixed image shape: {fixed_img.shape}")
             return moving_img, fixed_img
