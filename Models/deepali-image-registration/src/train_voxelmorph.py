@@ -19,10 +19,14 @@ import os
 
 import logging
 
+import torch
+from deepali.core.environ import cuda_visible_devices
+
+
 sys.path.append(os.getcwd())
 
 log_dir = "vxlmorph/runs/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S") # TensorBoard log directory
-os.mkdir(log_dir) # Create the log directory
+os.makedirs(log_dir, exist_ok=True) # Create the log directory
 
 
 def vxm_data_generator(paired_data, batch_size=16):
@@ -98,6 +102,17 @@ if __name__ == '__main__':
 
     logging.basicConfig(filename=log_dir+'/'+datetime.datetime.now().strftime("%Y%m%d-%H%M%S")+'.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+
+    # Set the device
+    print("Checking for CUDA availability...")
+    print("CUDA available:", torch.cuda.is_available())
+    print("CUDA devices:", torch.cuda.device_count())
+    print("CUDA device names:", [torch.cuda.get_device_name(i) for i in range(torch.cuda.device_count())])
+    print("CUDA visible devices:", cuda_visible_devices())
+    device = torch.device("cuda" if torch.cuda.is_available() and cuda_visible_devices() else "cpu")
+    print(device)
+    os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+
     # Set the device
     physical_devices = tf.config.list_physical_devices('GPU')
     if len(physical_devices) > 0:
@@ -108,7 +123,8 @@ if __name__ == '__main__':
         logging.info("No GPU detected")
     
     # load the images
-    images = np.load(args.images_path)
+    #images = np.load(args.images_path)
+    images = np.memmap(args.images_path, dtype='float32', mode='r', shape=(63, 333, 333, 800))
 
     logging.info(f'Loaded images from {args.images_path}')
 

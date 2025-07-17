@@ -22,7 +22,7 @@ from sklearn.model_selection import train_test_split
 
 from classes.metrics import ImageMetrics
 from classes.model import VoxelMorph
-from classes.dataset import CustomDataset
+from classes.own_dataset import CustomDataset
 from classes.losses import VoxelMorphLoss, VoxelMorphDataLoss, VoxelMorphSegLoss
 from tqdm import tqdm
 
@@ -59,11 +59,10 @@ def train(model, train_loader, val_loader, optimizer, loss_func, smoothness_weig
     
     criterion = VoxelMorphLoss(criterion_data, criterion_seg, seg_weight=0.01)
 
-    for epoch in range(num_epochs):
+    for epoch in tqdm(range(num_epochs), desc='Training', unit='epoch'):
         model.train()
         epoch_train_loss = 0
-        # tqdm is used to show a progress bar for the training loop
-        for batch_idx, data in tqdm(enumerate(train_loader), total=len(train_loader), desc=f'Epoch {epoch + 1}/{num_epochs}', unit='batch'):
+        for batch_idx, data in enumerate(train_loader): # Iterate over the training data
             optimizer.zero_grad() # Zero the gradients
 
             if seg:
@@ -83,7 +82,6 @@ def train(model, train_loader, val_loader, optimizer, loss_func, smoothness_weig
             epoch_train_loss += loss.item()
             
             writer.add_scalar('Loss/train', loss.item(), epoch * len(train_loader) + batch_idx) # Log the loss
-            print(f'Train Epoch: {epoch + 1} [{batch_idx * len(source)}/{len(train_loader.dataset)} ({100. * batch_idx / len(train_loader):.0f}%)]\tLoss: {loss.item():.6f}') # Print the loss
         
         avg_train_loss_message = f'====> Epoch: {epoch + 1} Average training loss: {epoch_train_loss / len(train_loader):.6f}'
         logging.info(avg_train_loss_message) # Log the average training loss
@@ -131,6 +129,9 @@ def test(model, test_loader, loss_func, loss_weight, metrics, device, seg=False)
     total_mi = 0
     global_step = 0
 
+    save_dir = "evaluation_outputs"
+    os.makedirs(save_dir, exist_ok=True)
+
     with torch.no_grad(): # Disable gradient computation for testing
         # tqdm is used to show a progress bar for the testing loop
         for batch_idx, data in tqdm(enumerate(test_loader), total=len(test_loader), desc='Testing', unit='batch'):
@@ -147,6 +148,33 @@ def test(model, test_loader, loss_func, loss_weight, metrics, device, seg=False)
             mi_score_batch = metrics.mi_loss(transformed, target) # Compute the Mutual Information score
             total_mi += mi_score_batch
             total_dice += dice_score_batch
+
+            # 🧪 Speichern aller Outputs für jedes Sample im Batch
+            for i in range(source.shape[0]):
+                base_name = f"sample_{batch_idx}_{i}"
+
+                # Konvertiere zu CPU + numpy
+                s = source[i].squeeze().detach().cpu().numpy()
+                t = target[i].squeeze().detach().cpu().numpy()
+                tr = transformed[i].squeeze().detach().cpu().numpy()
+                fl = flow[i].detach().cpu().numpy()
+
+                np.save(os.path.join(save_dir, f"{base_name}_source.npy"), s)
+                np.save(os.path.join(save_dir, f"{base_name}_target.npy"), t)
+                np.save(os.path.join(save_dir, f"{base_name}_transformed.npy"), tr)
+                np.save(os.path.join(save_dir, f"{base_name}_flow.npy"), fl)
+
+                if seg:
+                    ss = source_seg[i].squeeze().detach().cpu().numpy()
+                    ts = target_seg[i].squeeze().detach().cpu().numpy()
+                    trs = transformed_seg[i].squeeze().detach().cpu().numpy()
+                    np.save(os.path.join(save_dir, f"{base_name}_source_seg.npy"), ss)
+                    np.save(os.path.join(save_dir, f"{base_name}_target_seg.npy"), ts)
+                    np.save(os.path.join(save_dir, f"{base_name}_transformed_seg.npy"), trs)
+
+                # 📊 Logge die Metriken
+                with open(os.path.join(save_dir, "metrics_log.csv"), "a") as f:
+                    f.write(f"{base_name},{dice_score_batch:.6f},{mi_score_batch:.6f}\n")
 
             if batch_idx % 3 == 0: # Log the results for every 3rd batch
                 combined = []
@@ -244,11 +272,14 @@ if __name__=="__main__":
     logging.info(f'Loss Weight: {args.loss_weight}')
 
     # Create the dataset
-    data = np.load(args.images_path)
+    #data = np.load(args.images_path, mmap_mode="r")
+    data = np.memmap(args.images_path, dtype='float32', mode='r', shape=(56, 625, 625, 200))
+
 
     # Split the dataset into training, validation, and test sets
     if  args.seg_path.lower() != 'none':
-        seg_data = np.load(args.seg_path)
+        #seg_data = np.load(args.seg_path)
+        seg_data = np.memmap(args.seg_path, dtype='float32', mode='r', shape=(56, 625, 625, 200))
         dataset = CustomDataset(data, seg_data, transform=None)
         auxiliary_data = True
 
@@ -259,9 +290,9 @@ if __name__=="__main__":
     x_train, x_other = train_test_split(dataset, test_size=args.train_val_split, random_state=42)
     x_test, x_val = train_test_split(x_other, test_size=args.val_test_split, random_state=42)
 
-    train_loader = DataLoader(x_train, batch_size=args.batch_size, shuffle=True, num_workers=4)
-    val_loader = DataLoader(x_val, batch_size=args.batch_size, shuffle=False, num_workers=4)
-    test_loader = DataLoader(x_test, batch_size=args.batch_size, shuffle=False, num_workers=4)
+    train_loader = DataLoader(x_train, batch_size=1, shuffle=True, num_workers=4)
+    val_loader = DataLoader(x_val, batch_size=1, shuffle=False, num_workers=4)
+    test_loader = DataLoader(x_test, batch_size=1, shuffle=False, num_workers=4)
     
     # Create the model
     model = VoxelMorph(grid_size=[args.grid_size_x, args.grid_size_y], auxiliary_data=auxiliary_data)

@@ -7,6 +7,11 @@ from deepali.spatial.nonrigid import DisplacementFieldTransform
 
 import torch.nn.functional as F
 
+def match_tensor_shapes(t1, t2):
+    min_h = min(t1.shape[2], t2.shape[2])
+    min_w = min(t1.shape[3], t2.shape[3])
+    return t1[:, :, :min_h, :min_w], t2[:, :, :min_h, :min_w]
+
 class DeepAliUNet(torch.nn.Module):
     '''
     DeepAli UNet model
@@ -62,18 +67,22 @@ class DeepAliUNet(torch.nn.Module):
         # Upsample and concatenate
         dec4 = F.interpolate(enc5, scale_factor=2, mode='bilinear', align_corners=True)  
         dec4 = self.activation(self.decoder_conv4(dec4))  
+        dec4, enc4 = match_tensor_shapes(dec4, enc4)  # Match shapes before concatenation
         dec4 = torch.cat((dec4, enc4), dim=1) 
 
         dec3 = F.interpolate(dec4, scale_factor=2, mode='bilinear', align_corners=True) 
         dec3 = self.activation(self.decoder_conv3(dec3)) 
+        dec3, enc3 = match_tensor_shapes(dec3, enc3)  # Match shapes before concatenation
         dec3 = torch.cat((dec3, enc3), dim=1)  
 
         dec2 = F.interpolate(dec3, scale_factor=2, mode='bilinear', align_corners=True)  
         dec2 = self.activation(self.decoder_conv2(dec2))  
+        dec2, enc2 = match_tensor_shapes(dec2, enc2)  # Match shapes before concatenation
         dec2 = torch.cat((dec2, enc2), dim=1)  
 
         dec1 = F.interpolate(dec2, scale_factor=2, mode='bilinear', align_corners=True)  
         dec1 = self.activation(self.decoder_conv1(dec1)) 
+        dec1, enc1 = match_tensor_shapes(dec1, enc1)  # Match shapes before concatenation
         dec1 = torch.cat((dec1, enc1), dim=1)  
 
         # Final convolutions
