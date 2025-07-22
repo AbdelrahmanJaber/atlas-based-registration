@@ -20,4 +20,4 @@
 export PYTHONPATH=$(pwd):$PYTHONPATH
 
 # Use conda run to execute the script in the correct environment
-conda run -p /meta/projects/practical_sose25/.conda/envs/registration python /vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/crop_knee_patella_v2.py
+conda run -p /meta/projects/practical_sose25/.conda/envs/registration python /vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/crop_knee_patella_using_total_vibe_seg.py
