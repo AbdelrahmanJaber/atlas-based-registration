@@ -1,0 +1,61 @@
+no change     /opt/anaconda3/condabin/conda
+no change     /opt/anaconda3/bin/conda
+no change     /opt/anaconda3/bin/conda-env
+no change     /opt/anaconda3/bin/activate
+no change     /opt/anaconda3/bin/deactivate
+no change     /opt/anaconda3/etc/profile.d/conda.sh
+no change     /opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /opt/anaconda3/shell/condabin/Conda.psm1
+no change     /opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /opt/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /opt/anaconda3/etc/profile.d/conda.csh
+no change     /u/home/hothum/.bashrc
+No action taken.
+Thu Jul 31 11:55:57 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.133.20             Driver Version: 570.133.20     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               Off |   00000000:01:00.0 Off |                  Off |
+| 30%   43C    P8             26W /  300W |       0MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Checking for CUDA availability...
+CUDA available: True
+CUDA devices: 1
+CUDA device names: ['NVIDIA RTX A6000']
+CUDA visible devices: [0]
+cuda
+Get Dataset...
+Dataset loaded. Length: 6
+Splitting dataset into train, validation, and test sets...
+Train: 1, Val: 3, Test: 2
+Creating DataLoaders...
+Creating model...
+Starting training...
+Saved new best model: best_model_epoch_1.pth
+Removing previous best model: best_model_epoch_1.pth
+Removed previous best model: best_model_epoch_1.pth
+Saved new best model: best_model_epoch_2.pth
+Removing previous best model: best_model_epoch_2.pth
+Removed previous best model: best_model_epoch_2.pth
+Saved new best model: best_model_epoch_3.pth
+Removing previous best model: best_model_epoch_3.pth
+Removed previous best model: best_model_epoch_3.pth
+Saved new best model: best_model_epoch_4.pth
+Removing previous best model: best_model_epoch_4.pth
+Removed previous best model: best_model_epoch_4.pth
+Saved new best model: best_model_epoch_5.pth
+Saving model...
+Testing model...

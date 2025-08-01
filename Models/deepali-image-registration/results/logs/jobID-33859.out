@@ -1,0 +1,110 @@
+no change     /opt/anaconda3/condabin/conda
+no change     /opt/anaconda3/bin/conda
+no change     /opt/anaconda3/bin/conda-env
+no change     /opt/anaconda3/bin/activate
+no change     /opt/anaconda3/bin/deactivate
+no change     /opt/anaconda3/etc/profile.d/conda.sh
+no change     /opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /opt/anaconda3/shell/condabin/Conda.psm1
+no change     /opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /opt/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /opt/anaconda3/etc/profile.d/conda.csh
+no change     /u/home/hothum/.bashrc
+No action taken.
+Thu Jul 31 18:13:30 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     Off |   00000000:61:00.0 Off |                    0 |
+|  0%   32C    P8             24W /  300W |       1MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Checking for CUDA availability...
+CUDA available: True
+CUDA devices: 1
+CUDA device names: ['NVIDIA A40']
+CUDA visible devices: [0]
+cuda
+Get Dataset...
+Dataset loaded. Length: 183
+Splitting dataset into train, validation, and test sets...
+Train: 146, Val: 19, Test: 18
+Creating DataLoaders...
+Creating model...
+Starting training...
+Training batch 1/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 2/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 3/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 4/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 5/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 6/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 7/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 8/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 9/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 10/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 11/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 12/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 13/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 14/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 15/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 16/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 17/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 18/19
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Shape: Transformed: torch.Size([8, 1, 640, 640]), Flow: torch.Size([8, 2, 640, 640]), Transformed Seg: torch.Size([8, 1, 640, 640]), loss: torch.Size([])
+Training batch 19/19
+Sample shape: 4, Data 0 shape: torch.Size([2, 1, 640, 640])
+Shape: Transformed: torch.Size([2, 1, 640, 640]), Flow: torch.Size([2, 2, 640, 640]), Transformed Seg: torch.Size([2, 1, 640, 640]), loss: torch.Size([])
+Validating batch 1/3
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Validating batch 2/3
+Sample shape: 4, Data 0 shape: torch.Size([8, 1, 640, 640])
+Validating batch 3/3
+Sample shape: 4, Data 0 shape: torch.Size([3, 1, 640, 640])
+Saved new best model: best_model_epoch_1.pth

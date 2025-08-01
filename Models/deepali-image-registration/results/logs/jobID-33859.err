@@ -1,0 +1,23 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+2025-07-31 18:13:34.669335: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753978414.697830 1198765 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753978414.704805 1198765 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753978414.726497 1198765 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753978414.726528 1198765 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753978414.726532 1198765 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753978414.726536 1198765 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-31 18:13:34.732144: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Training:   0%|          | 0/100 [00:00<?, ?epoch/s]Training:   0%|          | 0/100 [00:06<?, ?epoch/s]
+Traceback (most recent call last):
+  File "/vol/miltank/users/hothum/Documents/atlas-based-registration/Models/deepali-image-registration/src/train_mri.py", line 464, in <module>
+    train(model, train_loader, val_loader, optimizer, args.loss, args.loss_weight, num_epochs=args.nb_epochs, device=device, weights_dir=args.weights_path, output_dir=args.output_dir, grid=[args.grid_size_x, args.grid_size_y], seg=auxiliary_data)
+  File "/vol/miltank/users/hothum/Documents/atlas-based-registration/Models/deepali-image-registration/src/train_mri.py", line 174, in train
+    atlas = atlas.reshape(12, 1, 1, grid[0], grid[1])
+ValueError: cannot reshape array of size 7782400 into shape (12,1,1,640,640)

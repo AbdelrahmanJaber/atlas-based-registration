@@ -1,0 +1,43 @@
+no change     /opt/anaconda3/condabin/conda
+no change     /opt/anaconda3/bin/conda
+no change     /opt/anaconda3/bin/conda-env
+no change     /opt/anaconda3/bin/activate
+no change     /opt/anaconda3/bin/deactivate
+no change     /opt/anaconda3/etc/profile.d/conda.sh
+no change     /opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /opt/anaconda3/shell/condabin/Conda.psm1
+no change     /opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /opt/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /opt/anaconda3/etc/profile.d/conda.csh
+no change     /u/home/hothum/.bashrc
+No action taken.
+Fri Aug  1 09:15:21 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     Off |   00000000:81:00.0 Off |                    0 |
+|  0%   32C    P8             24W /  300W |       1MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Checking for CUDA availability...
+CUDA available: True
+CUDA devices: 1
+CUDA device names: ['NVIDIA A40']
+CUDA visible devices: [0]
+cuda
+Training set size: 146, Validation set size: 18, Test set size: 19
+Loss function: MSE, Grad norm type: l2, Lambda: 0.02, Gamma: 0.01
+Epoch 1/50
+ 1/50 [..............................] - ETA: 8:39 - loss: 0.0310 - vxm_dense_transformer_loss: 0.0310 - vxm_dense_flow_loss: 4.1806e-12 2/50 [>.............................] - ETA: 15:21 - loss: 0.0235 - vxm_dense_transformer_loss: 0.0235 - vxm_dense_flow_loss: 1.3323e-07 3/50 [>.............................] - ETA: 18:35 - loss: 0.0192 - vxm_dense_transformer_loss: 0.0192 - vxm_dense_flow_loss: 6.3278e-07 4/50 [=>............................] - ETA: 18:58 - loss: 0.0199 - vxm_dense_transformer_loss: 0.0199 - vxm_dense_flow_loss: 2.7998e-06 5/50 [==>...........................] - ETA: 18:52 - loss: 0.0196 - vxm_dense_transformer_loss: 0.0196 - vxm_dense_flow_loss: 8.2187e-06 6/50 [==>...........................] - ETA: 18:47 - loss: 0.0190 - vxm_dense_transformer_loss: 0.0190 - vxm_dense_flow_loss: 2.4576e-05 7/50 [===>..........................] - ETA: 18:21 - loss: 0.0182 - vxm_dense_transformer_loss: 0.0182 - vxm_dense_flow_loss: 4.3784e-05 8/50 [===>..........................] - ETA: 18:11 - loss: 0.0186 - vxm_dense_transformer_loss: 0.0186 - vxm_dense_flow_loss: 6.3856e-05 9/50 [====>.........................] - ETA: 17:55 - loss: 0.0184 - vxm_dense_transformer_loss: 0.0184 - vxm_dense_flow_loss: 9.2959e-05

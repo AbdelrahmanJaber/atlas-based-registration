@@ -1,0 +1,29 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+2025-08-01 09:26:17.858980: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1754033177.880125 3020355 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1754033177.886594 3020355 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1754033177.904639 3020355 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1754033177.904668 3020355 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1754033177.904671 3020355 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1754033177.904675 3020355 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-08-01 09:26:17.909464: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+####################################
+/u/home/hothum/.conda/envs/tfenv/lib/python3.10/site-packages/torch/utils/data/dataloader.py:626: UserWarning:
+
+This DataLoader will create 20 worker processes in total. Our suggested max number of worker in current system is 10, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+
+  File "/vol/miltank/users/hothum/Documents/atlas-based-registration/Models/deepali-image-registration/src/train_voxelmorph.py", line 184, in <module>
+    train_loader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, num_workers=20)
+  File "/u/home/hothum/.conda/envs/tfenv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 415, in __init__
+    self.check_worker_number_rationality()
+  File "/u/home/hothum/.conda/envs/tfenv/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 626, in check_worker_number_rationality
+    warnings.warn(
+####################################
+slurmstepd: error: *** JOB 34022 ON helios CANCELLED AT 2025-08-01T09:27:00 ***

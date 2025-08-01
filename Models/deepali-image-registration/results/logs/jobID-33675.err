@@ -1,0 +1,26 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+2025-07-31 12:00:16.850362: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753956016.867003  502518 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753956016.872224  502518 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753956016.886675  502518 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753956016.886698  502518 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753956016.886701  502518 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753956016.886703  502518 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-31 12:00:16.890426: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Training:   0%|          | 0/10 [00:00<?, ?epoch/s]Training:  10%|█         | 1/10 [00:02<00:21,  2.35s/epoch]Training:  20%|██        | 2/10 [00:04<00:17,  2.21s/epoch]Training:  30%|███       | 3/10 [00:06<00:14,  2.14s/epoch]Training:  40%|████      | 4/10 [00:08<00:12,  2.03s/epoch]Training:  50%|█████     | 5/10 [00:10<00:09,  1.96s/epoch]Training:  60%|██████    | 6/10 [00:12<00:07,  1.95s/epoch]Training:  70%|███████   | 7/10 [00:13<00:05,  1.91s/epoch]Training:  80%|████████  | 8/10 [00:15<00:03,  1.85s/epoch]Training:  90%|█████████ | 9/10 [00:17<00:01,  1.90s/epoch]Training: 100%|██████████| 10/10 [00:19<00:00,  1.89s/epoch]Training: 100%|██████████| 10/10 [00:19<00:00,  1.96s/epoch]
+Testing:   0%|          | 0/1 [00:00<?, ?batch/s]Testing:   0%|          | 0/1 [00:00<?, ?batch/s]
+Traceback (most recent call last):
+  File "/vol/miltank/users/hothum/Documents/atlas-based-registration/Models/deepali-image-registration/src/train_mri.py", line 417, in <module>
+    test(model, test_loader, args.loss, args.loss_weight, metrics, device, output_dir=args.output_dir, seg=auxiliary_data)
+  File "/vol/miltank/users/hothum/Documents/atlas-based-registration/Models/deepali-image-registration/src/train_mri.py", line 228, in test
+    flows.append(visualize_flow(fl).cpu().numpy()) # Visualize the flow magnitude
+  File "/vol/miltank/users/hothum/Documents/atlas-based-registration/Models/deepali-image-registration/src/train_mri.py", line 284, in visualize_flow
+    flow_x = flow[0, 0, :, :].unsqueeze(0)  # X displacement
+IndexError: too many indices for array: array is 3-dimensional, but 4 were indexed

@@ -171,26 +171,12 @@ if __name__ == '__main__':
     # val_loader   = DataLoader(x_val, batch_size=args.batch_size, shuffle=False)
     # test_loader  = DataLoader(x_test, batch_size=args.batch_size, shuffle=False)
 
-    train_frac = args.train_val_split
-    val_frac   = (1 - args.train_val_split) * args.val_test_split
-    test_frac  = (1 - args.train_val_split) * (1 - args.val_test_split)
-    train_indices, val_indices, test_indices = custom_split(indices, train_frac=train_frac, val_frac=val_frac, test_frac=test_frac, seed=42)
-
-    from torch.utils.data import Subset
-    train_dataset = Subset(dataset, train_indices)
-    val_dataset   = Subset(dataset, val_indices)
-    test_dataset  = Subset(dataset, test_indices)
-
-    train_loader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, num_workers=10)
-    val_loader   = DataLoader(val_dataset, batch_size=args.batch_size, shuffle=False, num_workers=10)
-    test_loader  = DataLoader(test_dataset, batch_size=1, shuffle=False, num_workers=10)
+    test_loader  = DataLoader(dataset, batch_size=1, shuffle=False, num_workers=10)
 
 
     print(f"Training set size: {len(train_indices)}, Validation set size: {len(val_indices)}, Test set size: {len(test_indices)}")
 
     # Create the data generators
-    train_gen = torch_to_keras_generator(train_loader)
-    val_gen = torch_to_keras_generator(val_loader)
     test_gen = torch_to_keras_generator(test_loader)
 
     # Define the network architecture
@@ -238,12 +224,6 @@ if __name__ == '__main__':
         file_writer = tf.summary.create_file_writer(log_dir)
         #file_writer = tf.summary.create_file_writer(log_dir + "/images")
         vxm_model.compile(tf.keras.optimizers.Adam(learning_rate=args.learning_rate), loss=losses, loss_weights=loss_weights)
-        # train and validate model
-        logging.info(f'Training model with hyperparams: Loss: {args.loss}, Lambda: {args.lambda_param}, Gamma: {args.gamma_param}, Learning rate: {args.learning_rate}')
-        vxm_model.fit(train_gen, steps_per_epoch=args.steps_per_epoch, epochs=args.nb_epochs, validation_data=val_gen, validation_steps=args.steps_per_epoch, verbose=args.verbose, callbacks=[tensorboard_callback])
-        # save model
-        logging.info('Saving model...')
-        vxm_model.save_weights(args.weights_path)
         # evaluate or test model
         logging.info('Evaluating model...')
         vxm_model.evaluate(test_gen, steps=args.steps_per_epoch, verbose=args.verbose)
