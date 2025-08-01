@@ -1,0 +1,10 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+Traceback (most recent call last):
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/preprocessing.py", line 22, in <module>
+    from TPTBox import BIDS_FILE
+ModuleNotFoundError: No module named 'TPTBox'

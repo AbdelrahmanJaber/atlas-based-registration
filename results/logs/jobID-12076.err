@@ -1,0 +1,3 @@
+/var/lib/slurm/slurmd/job12076/slurm_script: line 27: 1384657 Killed                  conda deactivate
+/var/lib/slurm/slurmd/job12076/slurm_script: line 31: 1384663 Killed                  conda activate /meta/projects/practical_sose25/.conda/envs/registration
+slurmstepd: error: Detected 2 oom_kill events in StepId=12076.batch. Some of the step tasks have been OOM Killed.

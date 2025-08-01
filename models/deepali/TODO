@@ -1,0 +1,40 @@
+Core:
+- [ ] Enable `Grid` to represent a batch of sampling grids, or add `GridBatch` (cf. `Image` <-> `ImageBatch`).
+
+Data:
+- [x] Implement `Image.split`, `ImageBatch.split`, `FlowField.split`, and `FlowFields.split` such that return value is of same Tensor subclass type with adjusted spatial grid in case of a split along a spatial image dimension.
+
+Loss functions:
+- [x] Normalized mutual information.
+
+Data transforms:
+- [ ] Basic data augmentations.
+
+Spatial transforms:
+- [x] Fix __repr__ of transforms with "params" set to a torch.nn.Module.
+- [x] More efficient implementation of cubic B-spline evaluation than using transposed convolutions.
+
+Utility functions:
+- [ ] Function to save `FreeFormTransformation` parameters in MIRTK `.dof.gz` format.
+
+Neural networks:
+- [x] Follow MONAI and rename `dimensions` argument of `__init__` functions to `spatial_dims`.
+
+Examples:
+- Traditional free-form deformation algorithm:
+  - [x] Write example code and script for pairwise image registration using deepali.
+  - [ ] Restrict registration to foreground region of interest, especially when segmentations are given.
+  - [ ] Enable and demonstrate parallel registration of multiple pairs / source images in single batch.
+- Image-and-Spatial Transformer Networks:
+  - [ ] Write training script and test with synthetic examples used in paper.
+  - [ ] Write test-time refinement script.
+
+Tests:
+- [ ] Full test coverage of core library functions.
+- [ ] Tests of spatial transformation models.
+- [ ] Tests for main data classes.
+- [ ] Tests for datasets.
+- [ ] Tests of loss terms.
+
+Documentation:
+- [x] Add Sphinx based `docs`, see `docs/source/conf.py` of PyTorch or kornia.

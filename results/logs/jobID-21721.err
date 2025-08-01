@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/ct_preprocessing.py", line 437, in <module>
+    main() 
+    ^^^^^^
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/ct_preprocessing.py", line 421, in main
+    results = preprocessor.preprocess_ct_pipeline(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/ct_preprocessing.py", line 344, in preprocess_ct_pipeline
+    ct_clipped = self.clip_hounsfield_units(ct_nii)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/ct_preprocessing.py", line 75, in clip_hounsfield_units
+    return NII(data, nii.affine, nii.header, seg=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: NII.__init__() got multiple values for argument 'seg'
+
+ERROR conda.cli.main_run:execute(125): `conda run python utils/ct_preprocessing.py` failed. (See above for error)

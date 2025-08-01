@@ -1,0 +1,44 @@
+CUDA_VISIBLE_DEVICES=0 python -m examples.ffd.register -s /vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom/kristin/cropped_ct/CTFU00065/ses-20100514/sub-CTFU00065_ses-20100514_sequ-4_ct-patella.nii.gz --source-seg /vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom/kristin/cropped_seg/CTFU00065/ses-20100514/sub-CTFU00065_ses-20100514_sequ-4_seg-bone_msk.nii.gz -t /vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom/kristin/cropped_ct/CTFU00065/ses-20110922/sub-CTFU00065_ses-20110922_sequ-2_ct-patella.nii.gz --target-seg /vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom/kristin/cropped_seg/CTFU00065/ses-20110922/sub-CTFU00065_ses-20110922_sequ-2_seg-bone_msk.nii.gz -w /vol/miltank/users/fratzke/Documents/atlas-based-registration/models/deepali/output/0/deformed.mha --warped-seg /vol/miltank/users/fratzke/Documents/atlas-based-registration/models/deepali/output/0/seg.mha -o /vol/miltank/users/fratzke/Documents/atlas-based-registration/models/deepali/output/0/flow.mha --device cuda --log-level DEBUG --debug 1
+
+     0:      0.00175
+     1:      0.00181
+     2:      0.00172
+level=2: loss=0.00169 (3 steps)
+     0:      0.00194
+     1:      0.00275
+     2:      0.00255
+     3:      0.00229
+     4:      0.00215
+level=1: loss=0.00208 (5 steps)
+     0:      0.00220
+     1:      0.01344
+     2:      0.01095
+     3:      0.00744
+     4:      0.00574
+     5:      0.00516
+     6:      0.00481
+     7:      0.00438
+     8:      0.00395
+     9:      0.00362
+    10:      0.00340
+    11:      0.00324
+    12:      0.00308
+    13:      0.00294
+    14:      0.00282
+    15:      0.00273
+    16:      0.00265
+    17:      0.00258
+    18:      0.00252
+    19:      0.00246
+    20:      0.00242
+    21:      0.00238
+    22:      0.00235
+    23:      0.00232
+    24:      0.00229
+    25:      0.00227
+    26:      0.00225
+    27:      0.00223
+    28:      0.00222
+    29:      0.00221
+    30:      0.00219
+level=0: loss=0.00218 (31 steps)

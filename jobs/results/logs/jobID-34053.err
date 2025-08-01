@@ -1,0 +1,7 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+Calculating metrics:   0%|          | 0/37 [00:00<?, ?sample/s]Calculating metrics:   3%|▎         | 1/37 [00:28<17:08, 28.57s/sample]Calculating metrics:   5%|▌         | 2/37 [00:56<16:32, 28.36s/sample]Calculating metrics:   8%|▊         | 3/37 [01:23<15:41, 27.68s/sample]Calculating metrics:  11%|█         | 4/37 [01:48<14:38, 26.61s/sample]Calculating metrics:  14%|█▎        | 5/37 [02:13<13:55, 26.12s/sample]Calculating metrics:  16%|█▌        | 6/37 [02:38<13:14, 25.64s/sample]Calculating metrics:  19%|█▉        | 7/37 [03:05<12:57, 25.90s/sample]Calculating metrics:  22%|██▏       | 8/37 [03:33<12:58, 26.85s/sample]Calculating metrics:  24%|██▍       | 9/37 [04:01<12:40, 27.16s/sample]Calculating metrics:  27%|██▋       | 10/37 [04:29<12:17, 27.30s/sample]Calculating metrics:  30%|██▉       | 11/37 [04:58<12:03, 27.82s/sample]Calculating metrics:  32%|███▏      | 12/37 [05:26<11:35, 27.83s/sample]slurmstepd: error: *** JOB 34053 ON prometheus CANCELLED AT 2025-08-01T10:32:12 ***

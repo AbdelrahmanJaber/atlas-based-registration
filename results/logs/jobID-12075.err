@@ -1,0 +1,7 @@
+/var/lib/slurm/slurmd/job12075/slurm_script: line 27: 1384585 Killed                  conda deactivate
+/var/lib/slurm/slurmd/job12075/slurm_script: line 31: 1384594 Killed                  conda activate /meta/projects/practical_sose25/.conda/envs/registration
+Traceback (most recent call last):
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/preprocessing.py", line 22, in <module>
+    from TPTBox import BIDS_FILE
+ModuleNotFoundError: No module named 'TPTBox'
+slurmstepd: error: Detected 2 oom_kill events in StepId=12075.batch. Some of the step tasks have been OOM Killed.

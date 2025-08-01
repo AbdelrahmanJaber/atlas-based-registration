@@ -1,0 +1,66 @@
+CUDA_VISIBLE_DEVICES=0 python -m examples.ffd.register -s /vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom/kristin/cropped_ct/CTFU00065/ses-20151125/sub-CTFU00065_ses-20151125_sequ-3_ct-patella.nii.gz --source-seg /vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom/kristin/cropped_seg/CTFU00065/ses-20151125/sub-CTFU00065_ses-20151125_sequ-3_seg-bone_msk.nii.gz -t /vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom/kristin/cropped_ct/CTFU00065/ses-20151125/sub-CTFU00065_ses-20151125_sequ-2_ct-patella.nii.gz --target-seg /vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom/kristin/cropped_seg/CTFU00065/ses-20151125/sub-CTFU00065_ses-20151125_sequ-2_seg-bone_msk.nii.gz -w /vol/miltank/users/fratzke/Documents/atlas-based-registration/models/deepali/output/1/deformed.mha --warped-seg /vol/miltank/users/fratzke/Documents/atlas-based-registration/models/deepali/output/1/seg.mha -o /vol/miltank/users/fratzke/Documents/atlas-based-registration/models/deepali/output/1/flow.mha --device cuda --log-level DEBUG --debug 1 -v 2 -c /vol/miltank/users/fratzke/Documents/atlas-based-registration/models/deepali/examples/ffd/params.yaml
+    
+    
+     0:      0.00003
+     1:      0.00009
+     2:      0.00010
+     3:      0.00008
+     4:      0.00007
+     5:      0.00006
+     6:      0.00006
+level=2: loss=0.00005 (7 steps)
+     0:      0.00006
+     1:      0.00101
+     2:      0.00081
+     3:      0.00049
+     4:      0.00033
+level=1: loss=0.00027 (5 steps)
+     0:      0.00025
+     1:      0.01131
+     2:      0.00887
+     3:      0.00544
+     4:      0.00377
+     5:      0.00320
+     6:      0.00286
+     7:      0.00243
+     8:      0.00200
+     9:      0.00167
+    10:      0.00145
+    11:      0.00128
+    12:      0.00114
+    13:      0.00101
+    14:      0.00089
+    15:      0.00080
+    16:      0.00072
+    17:      0.00065
+    18:      0.00059
+    19:      0.00054
+    20:      0.00050
+    21:      0.00046
+    22:      0.00043
+    23:      0.00040
+    24:      0.00038
+    25:      0.00036
+    26:      0.00034
+    27:      0.00032
+    28:      0.00031
+    29:      0.00030
+    30:      0.00029
+    31:      0.00028
+    32:      0.00027
+    33:      0.00027
+    34:      0.00026
+    35:      0.00025
+    36:      0.00025
+    37:      0.00025
+    38:      0.00024
+    39:      0.00024
+    40:      0.00024
+    41:      0.00023
+    42:      0.00023
+    43:      0.00023
+    44:      0.00023
+    45:      0.00023
+    46:      0.00022
+    47:      0.00022
+level=0: loss=0.00022 (48 steps)

@@ -1,0 +1,80 @@
+no change     /opt/anaconda3/condabin/conda
+no change     /opt/anaconda3/bin/conda
+no change     /opt/anaconda3/bin/conda-env
+no change     /opt/anaconda3/bin/activate
+no change     /opt/anaconda3/bin/deactivate
+no change     /opt/anaconda3/etc/profile.d/conda.sh
+no change     /opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /opt/anaconda3/shell/condabin/Conda.psm1
+no change     /opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /opt/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /opt/anaconda3/etc/profile.d/conda.csh
+no change     /u/home/jaba/.bashrc
+No action taken.
+no change     /opt/anaconda3/condabin/conda
+no change     /opt/anaconda3/bin/conda
+no change     /opt/anaconda3/bin/conda-env
+no change     /opt/anaconda3/bin/activate
+no change     /opt/anaconda3/bin/deactivate
+no change     /opt/anaconda3/etc/profile.d/conda.sh
+no change     /opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /opt/anaconda3/shell/condabin/Conda.psm1
+no change     /opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /opt/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /opt/anaconda3/etc/profile.d/conda.csh
+no change     /u/home/jaba/.bashrc
+No action taken.
+Channels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... failed
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: TPTBox in /u/home/jaba/.local/lib/python3.12/site-packages (0.4.0)
+Requirement already satisfied: SimpleITK<3.0.0,>=2.3.1 in /u/home/jaba/.local/lib/python3.12/site-packages (from TPTBox) (2.5.0)
+Requirement already satisfied: antspyx==0.4.2 in /u/home/jaba/.local/lib/python3.12/site-packages (from TPTBox) (0.4.2)
+Requirement already satisfied: connected-components-3d<4.0.0,>=3.12.3 in /u/home/jaba/.local/lib/python3.12/site-packages (from TPTBox) (3.23.0)
+Requirement already satisfied: dataclasses in /u/home/jaba/.local/lib/python3.12/site-packages (from TPTBox) (0.6)
+Requirement already satisfied: dill<0.4.0,>=0.3.7 in /opt/anaconda3/lib/python3.12/site-packages (from TPTBox) (0.3.8)
+Requirement already satisfied: fill-voids<3.0.0,>=2.0.6 in /u/home/jaba/.local/lib/python3.12/site-packages (from TPTBox) (2.0.8)
+Requirement already satisfied: joblib in /opt/anaconda3/lib/python3.12/site-packages (from TPTBox) (1.4.2)
+Requirement already satisfied: matplotlib<4.0.0,>=3.8.2 in /opt/anaconda3/lib/python3.12/site-packages (from TPTBox) (3.9.2)
+Requirement already satisfied: nibabel<6.0.0,>=5.2.0 in /u/home/jaba/.local/lib/python3.12/site-packages (from TPTBox) (5.3.2)
+Requirement already satisfied: numpy<2.0.0,>=1.26.3 in /opt/anaconda3/lib/python3.12/site-packages (from TPTBox) (1.26.4)
+Requirement already satisfied: pathlib in /u/home/jaba/.local/lib/python3.12/site-packages (from TPTBox) (1.0.1)
+Requirement already satisfied: scikit-image<0.23.0,>=0.22.0 in /u/home/jaba/.local/lib/python3.12/site-packages (from TPTBox) (0.22.0)
+Requirement already satisfied: scikit-learn in /opt/anaconda3/lib/python3.12/site-packages (from TPTBox) (1.5.1)
+Requirement already satisfied: scipy<2.0.0,>=1.12.0 in /opt/anaconda3/lib/python3.12/site-packages (from TPTBox) (1.13.1)
+Requirement already satisfied: tqdm in /opt/anaconda3/lib/python3.12/site-packages (from TPTBox) (4.66.5)
+Requirement already satisfied: typing-extensions<5.0.0,>=4.9.0 in /opt/anaconda3/lib/python3.12/site-packages (from TPTBox) (4.11.0)
+Requirement already satisfied: pandas in /opt/anaconda3/lib/python3.12/site-packages (from antspyx==0.4.2->TPTBox) (2.2.2)
+Requirement already satisfied: statsmodels in /opt/anaconda3/lib/python3.12/site-packages (from antspyx==0.4.2->TPTBox) (0.14.2)
+Requirement already satisfied: webcolors in /u/home/jaba/.local/lib/python3.12/site-packages (from antspyx==0.4.2->TPTBox) (24.11.1)
+Requirement already satisfied: pyyaml in /opt/anaconda3/lib/python3.12/site-packages (from antspyx==0.4.2->TPTBox) (6.0.1)
+Requirement already satisfied: chart-studio in /u/home/jaba/.local/lib/python3.12/site-packages (from antspyx==0.4.2->TPTBox) (1.1.0)
+Requirement already satisfied: Pillow in /opt/anaconda3/lib/python3.12/site-packages (from antspyx==0.4.2->TPTBox) (10.4.0)
+Requirement already satisfied: fastremap in /u/home/jaba/.local/lib/python3.12/site-packages (from fill-voids<3.0.0,>=2.0.6->TPTBox) (1.16.1)
+Requirement already satisfied: contourpy>=1.0.1 in /opt/anaconda3/lib/python3.12/site-packages (from matplotlib<4.0.0,>=3.8.2->TPTBox) (1.2.0)
+Requirement already satisfied: cycler>=0.10 in /opt/anaconda3/lib/python3.12/site-packages (from matplotlib<4.0.0,>=3.8.2->TPTBox) (0.11.0)
+Requirement already satisfied: fonttools>=4.22.0 in /opt/anaconda3/lib/python3.12/site-packages (from matplotlib<4.0.0,>=3.8.2->TPTBox) (4.51.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /opt/anaconda3/lib/python3.12/site-packages (from matplotlib<4.0.0,>=3.8.2->TPTBox) (1.4.4)
+Requirement already satisfied: packaging>=20.0 in /opt/anaconda3/lib/python3.12/site-packages (from matplotlib<4.0.0,>=3.8.2->TPTBox) (24.1)
+Requirement already satisfied: pyparsing>=2.3.1 in /opt/anaconda3/lib/python3.12/site-packages (from matplotlib<4.0.0,>=3.8.2->TPTBox) (3.1.2)
+Requirement already satisfied: python-dateutil>=2.7 in /opt/anaconda3/lib/python3.12/site-packages (from matplotlib<4.0.0,>=3.8.2->TPTBox) (2.9.0.post0)
+Requirement already satisfied: networkx>=2.8 in /opt/anaconda3/lib/python3.12/site-packages (from scikit-image<0.23.0,>=0.22.0->TPTBox) (3.3)
+Requirement already satisfied: imageio>=2.27 in /opt/anaconda3/lib/python3.12/site-packages (from scikit-image<0.23.0,>=0.22.0->TPTBox) (2.33.1)
+Requirement already satisfied: tifffile>=2022.8.12 in /opt/anaconda3/lib/python3.12/site-packages (from scikit-image<0.23.0,>=0.22.0->TPTBox) (2023.4.12)
+Requirement already satisfied: lazy_loader>=0.3 in /opt/anaconda3/lib/python3.12/site-packages (from scikit-image<0.23.0,>=0.22.0->TPTBox) (0.4)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /opt/anaconda3/lib/python3.12/site-packages (from scikit-learn->TPTBox) (3.5.0)
+Requirement already satisfied: six>=1.5 in /opt/anaconda3/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib<4.0.0,>=3.8.2->TPTBox) (1.16.0)
+Requirement already satisfied: plotly in /opt/anaconda3/lib/python3.12/site-packages (from chart-studio->antspyx==0.4.2->TPTBox) (5.24.1)
+Requirement already satisfied: requests in /opt/anaconda3/lib/python3.12/site-packages (from chart-studio->antspyx==0.4.2->TPTBox) (2.32.3)
+Requirement already satisfied: retrying>=1.3.3 in /u/home/jaba/.local/lib/python3.12/site-packages (from chart-studio->antspyx==0.4.2->TPTBox) (1.3.4)
+Requirement already satisfied: pytz>=2020.1 in /opt/anaconda3/lib/python3.12/site-packages (from pandas->antspyx==0.4.2->TPTBox) (2024.1)
+Requirement already satisfied: tzdata>=2022.7 in /opt/anaconda3/lib/python3.12/site-packages (from pandas->antspyx==0.4.2->TPTBox) (2023.3)
+Requirement already satisfied: patsy>=0.5.6 in /opt/anaconda3/lib/python3.12/site-packages (from statsmodels->antspyx==0.4.2->TPTBox) (0.5.6)
+Requirement already satisfied: tenacity>=6.2.0 in /opt/anaconda3/lib/python3.12/site-packages (from plotly->chart-studio->antspyx==0.4.2->TPTBox) (8.2.3)
+Requirement already satisfied: charset-normalizer<4,>=2 in /opt/anaconda3/lib/python3.12/site-packages (from requests->chart-studio->antspyx==0.4.2->TPTBox) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /opt/anaconda3/lib/python3.12/site-packages (from requests->chart-studio->antspyx==0.4.2->TPTBox) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /opt/anaconda3/lib/python3.12/site-packages (from requests->chart-studio->antspyx==0.4.2->TPTBox) (2.2.3)
+Requirement already satisfied: certifi>=2017.4.17 in /opt/anaconda3/lib/python3.12/site-packages (from requests->chart-studio->antspyx==0.4.2->TPTBox) (2024.8.30)

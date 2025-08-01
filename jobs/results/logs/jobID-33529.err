@@ -1,0 +1,13 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+Traceback (most recent call last):
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/kristin_seg_ct_patella_crop_nearly_working.py", line 132, in <module>
+    preprocess_fullbody()
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/kristin_seg_ct_patella_crop_nearly_working.py", line 108, in preprocess_fullbody
+    resampled = NII.zoom(raw_arr, zoom_factors, order=1)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'property' object is not callable

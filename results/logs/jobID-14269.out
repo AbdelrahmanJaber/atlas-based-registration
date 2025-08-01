@@ -1,0 +1,41 @@
+no change     /opt/anaconda3/condabin/conda
+no change     /opt/anaconda3/bin/conda
+no change     /opt/anaconda3/bin/conda-env
+no change     /opt/anaconda3/bin/activate
+no change     /opt/anaconda3/bin/deactivate
+no change     /opt/anaconda3/etc/profile.d/conda.sh
+no change     /opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /opt/anaconda3/shell/condabin/Conda.psm1
+no change     /opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /opt/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /opt/anaconda3/etc/profile.d/conda.csh
+no change     /u/home/jaba/.bashrc
+No action taken.
+Retrieving notices: ...working... Channels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... failed
+Defaulting to user installation because normal site-packages is not writeable
+Collecting TPTBox
+  Downloading tptbox-0.4.0-py3-none-any.whl.metadata (10 kB)
+Collecting SimpleITK<3.0.0,>=2.3.1 (from TPTBox)
+  Using cached simpleitk-2.5.0-cp311-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.2 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 345.9/345.9 MB ? eta 0:00:00
+Downloading connected_components_3d-3.23.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 44.3 MB/s eta 0:00:00
+Downloading fill_voids-2.0.8-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 33.7 MB/s eta 0:00:00
+Using cached nibabel-5.3.2-py3-none-any.whl (3.3 MB)
+Downloading scikit_image-0.22.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (15.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.0/15.0 MB 49.2 MB/s eta 0:00:00
+Using cached simpleitk-2.5.0-cp311-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (52.6 MB)
+Using cached dataclasses-0.6-py3-none-any.whl (14 kB)
+Using cached pathlib-1.0.1-py3-none-any.whl (14 kB)
+Using cached chart_studio-1.1.0-py3-none-any.whl (64 kB)
+Downloading fastremap-1.16.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (6.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.7/6.7 MB 47.1 MB/s eta 0:00:00
+Using cached webcolors-24.11.1-py3-none-any.whl (14 kB)
+Using cached retrying-1.3.4-py3-none-any.whl (11 kB)
+Installing collected packages: SimpleITK, pathlib, dataclasses, webcolors, retrying, nibabel, fastremap, connected-components-3d, scikit-image, fill-voids, chart-studio, antspyx, TPTBox
+Successfully installed SimpleITK-2.5.0 TPTBox-0.4.0 antspyx-0.4.2 chart-studio-1.1.0 connected-components-3d-3.23.0 dataclasses-0.6 fastremap-1.16.1 fill-voids-2.0.8 nibabel-5.3.2 pathlib-1.0.1 retrying-1.3.4 scikit-image-0.22.0 webcolors-24.11.1
