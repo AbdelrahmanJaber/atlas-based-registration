@@ -1,0 +1,5 @@
+Processing single CT file: sub-CTFU00065_ses-20100514_sequ-2_ct.nii.gz
+Output will be saved to: /vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom/preprocessed/CTFU00065/ses-20100514/sub-CTFU00065_ses-20100514_sequ-2_seg-bone_msk.nii.gz
+Running segmentation on: sub-CTFU00065_ses-20100514_sequ-2_ct.nii.gz
+[44m[*] run dataset_id=520, gpu='auto'[0m[0m
+

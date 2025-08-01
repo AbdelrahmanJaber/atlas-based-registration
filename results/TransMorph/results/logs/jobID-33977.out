@@ -1,0 +1,185 @@
+no change     /meta/opt/anaconda3/condabin/conda
+no change     /meta/opt/anaconda3/bin/conda
+no change     /meta/opt/anaconda3/bin/conda-env
+no change     /meta/opt/anaconda3/bin/activate
+no change     /meta/opt/anaconda3/bin/deactivate
+no change     /meta/opt/anaconda3/etc/profile.d/conda.sh
+no change     /meta/opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /meta/opt/anaconda3/shell/condabin/Conda.psm1
+no change     /meta/opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /meta/opt/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /meta/opt/anaconda3/etc/profile.d/conda.csh
+no change     /u/home/fratzke/.bashrc
+No action taken.
+Fri Aug  1 02:49:17 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     Off |   00000000:41:00.0 Off |                    0 |
+|  0%   33C    P8             24W /  300W |       1MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Using GPU: NVIDIA A40
+Best model: 2025-08-01_01-54-54
+det < 0: 0.038134620303199404
+Trans dsc: 0.0376, Raw dsc: 0.0375
+det < 0: 0.06098545619419643
+Trans dsc: 0.0348, Raw dsc: 0.0375
+det < 0: 0.038295927501860116
+Trans dsc: 0.0369, Raw dsc: 0.0372
+det < 0: 0.050442068917410716
+Trans dsc: 0.0362, Raw dsc: 0.0372
+det < 0: 0.030397832961309525
+Trans dsc: 0.0368, Raw dsc: 0.0366
+det < 0: 0.08343026297433036
+Trans dsc: 0.0367, Raw dsc: 0.0366
+det < 0: 0.03185817173549107
+Trans dsc: 0.0367, Raw dsc: 0.0378
+det < 0: 0.041075642903645834
+Trans dsc: 0.0386, Raw dsc: 0.0378
+det < 0: 0.04557931082589286
+Trans dsc: 0.0261, Raw dsc: 0.0259
+det < 0: 0.1148956298828125
+Trans dsc: 0.0279, Raw dsc: 0.0259
+det < 0: 0.04323468889508929
+Trans dsc: 0.0222, Raw dsc: 0.0228
+det < 0: 0.0723388671875
+Trans dsc: 0.0239, Raw dsc: 0.0228
+det < 0: 0.05085042317708333
+Trans dsc: 0.0227, Raw dsc: 0.0229
+det < 0: 0.09446367536272321
+Trans dsc: 0.0240, Raw dsc: 0.0229
+det < 0: 0.0372406005859375
+Trans dsc: 0.0261, Raw dsc: 0.0273
+det < 0: 0.04241420200892857
+Trans dsc: 0.0293, Raw dsc: 0.0273
+det < 0: 0.03903227306547619
+Trans dsc: 0.0270, Raw dsc: 0.0273
+det < 0: 0.09569614955357143
+Trans dsc: 0.0294, Raw dsc: 0.0273
+det < 0: 0.03268214634486607
+Trans dsc: 0.0262, Raw dsc: 0.0285
+det < 0: 0.03371654692150298
+Trans dsc: 0.0319, Raw dsc: 0.0285
+det < 0: 0.02988644554501488
+Trans dsc: 0.0395, Raw dsc: 0.0392
+det < 0: 0.0605712890625
+Trans dsc: 0.0379, Raw dsc: 0.0392
+det < 0: 0.06230250767299107
+Trans dsc: 0.0224, Raw dsc: 0.0223
+det < 0: 0.10746576218377976
+Trans dsc: 0.0233, Raw dsc: 0.0223
+det < 0: 0.037843395414806545
+Trans dsc: 0.0293, Raw dsc: 0.0300
+det < 0: 0.07267688569568452
+Trans dsc: 0.0327, Raw dsc: 0.0300
+det < 0: 0.04652462913876488
+Trans dsc: 0.0343, Raw dsc: 0.0344
+det < 0: 0.08909476143973215
+Trans dsc: 0.0369, Raw dsc: 0.0344
+det < 0: 0.03815830775669643
+Trans dsc: 0.0342, Raw dsc: 0.0352
+det < 0: 0.07204647972470238
+Trans dsc: 0.0384, Raw dsc: 0.0352
+det < 0: 0.03771173386346726
+Trans dsc: 0.0360, Raw dsc: 0.0366
+det < 0: 0.04081842331659226
+Trans dsc: 0.0364, Raw dsc: 0.0366
+det < 0: 0.024922979445684525
+Trans dsc: 0.0403, Raw dsc: 0.0391
+det < 0: 0.02159976050967262
+Trans dsc: 0.0361, Raw dsc: 0.0391
+det < 0: 0.09498857770647322
+Trans dsc: 0.0233, Raw dsc: 0.0222
+det < 0: 0.054268537248883926
+Trans dsc: 0.0221, Raw dsc: 0.0222
+det < 0: 0.06182832263764881
+Trans dsc: 0.0366, Raw dsc: 0.0372
+det < 0: 0.03787304106212798
+Trans dsc: 0.0370, Raw dsc: 0.0372
+det < 0: 0.09313456217447917
+Trans dsc: 0.0276, Raw dsc: 0.0256
+det < 0: 0.028551810128348214
+Trans dsc: 0.0252, Raw dsc: 0.0256
+det < 0: 0.03222845168340774
+Trans dsc: 0.0366, Raw dsc: 0.0379
+det < 0: 0.033907935732886904
+Trans dsc: 0.0389, Raw dsc: 0.0379
+det < 0: 0.057423909505208336
+Trans dsc: 0.0232, Raw dsc: 0.0232
+det < 0: 0.09875415620349702
+Trans dsc: 0.0246, Raw dsc: 0.0232
+det < 0: 0.0885896228608631
+Trans dsc: 0.0378, Raw dsc: 0.0350
+det < 0: 0.04403962634858631
+Trans dsc: 0.0354, Raw dsc: 0.0350
+det < 0: 0.10957016717819941
+Trans dsc: 0.0238, Raw dsc: 0.0226
+det < 0: 0.06188427153087798
+Trans dsc: 0.0228, Raw dsc: 0.0226
+det < 0: 0.03960643949962798
+Trans dsc: 0.0380, Raw dsc: 0.0402
+det < 0: 0.023885381789434525
+Trans dsc: 0.0405, Raw dsc: 0.0402
+det < 0: 0.06293146042596726
+Trans dsc: 0.0375, Raw dsc: 0.0362
+det < 0: 0.02953912644159226
+Trans dsc: 0.0361, Raw dsc: 0.0362
+det < 0: 0.09504641578311011
+Trans dsc: 0.0259, Raw dsc: 0.0238
+det < 0: 0.046854073660714285
+Trans dsc: 0.0237, Raw dsc: 0.0238
+det < 0: 0.04621364048549107
+Trans dsc: 0.0339, Raw dsc: 0.0349
+det < 0: 0.04815136137462798
+Trans dsc: 0.0365, Raw dsc: 0.0349
+det < 0: 0.05215207054501488
+Trans dsc: 0.0377, Raw dsc: 0.0370
+det < 0: 0.023714773995535714
+Trans dsc: 0.0364, Raw dsc: 0.0370
+det < 0: 0.04016781761532738
+Trans dsc: 0.0340, Raw dsc: 0.0342
+det < 0: 0.06792675199962797
+Trans dsc: 0.0363, Raw dsc: 0.0342
+det < 0: 0.08142961774553571
+Trans dsc: 0.0367, Raw dsc: 0.0366
+det < 0: 0.02247648693266369
+Trans dsc: 0.0368, Raw dsc: 0.0366
+det < 0: 0.04179513113839286
+Trans dsc: 0.0369, Raw dsc: 0.0343
+det < 0: 0.018740990048363094
+Trans dsc: 0.0341, Raw dsc: 0.0343
+det < 0: 0.04432532900855655
+Trans dsc: 0.0376, Raw dsc: 0.0362
+det < 0: 0.030830165318080357
+Trans dsc: 0.0344, Raw dsc: 0.0362
+det < 0: 0.059650966099330356
+Trans dsc: 0.0325, Raw dsc: 0.0303
+det < 0: 0.03784252348400298
+Trans dsc: 0.0297, Raw dsc: 0.0303
+det < 0: 0.03857814243861607
+Trans dsc: 0.0348, Raw dsc: 0.0345
+det < 0: 0.10687081473214285
+Trans dsc: 0.0362, Raw dsc: 0.0345
+det < 0: 0.05625799269903274
+Trans dsc: 0.0356, Raw dsc: 0.0366
+det < 0: 0.037935674758184525
+Trans dsc: 0.0375, Raw dsc: 0.0366
+det < 0: 0.030460757300967263
+Trans dsc: 0.0295, Raw dsc: 0.0343
+det < 0: 0.04329906645275298
+Trans dsc: 0.0355, Raw dsc: 0.0343
+Deformed DSC: 0.033 +- 0.006, Affine DSC: 0.032 +- 0.006
+deformed det: 0.05327180840333917, std: 0.024538434293297304

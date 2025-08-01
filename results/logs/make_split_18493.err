@@ -1,0 +1,7 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+Traceback (most recent call last):
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/make_split.py", line 1, in <module>
+    from models.voxelmorph.dataset import split_subjects
+ModuleNotFoundError: No module named 'models'

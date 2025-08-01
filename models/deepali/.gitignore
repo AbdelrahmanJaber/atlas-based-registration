@@ -1,0 +1,51 @@
+# macOS
+.DS_Store
+._.DS_Store
+
+# IDEs
+~$*
+*.swp
+/.idea/
+/.vscode/*.log
+
+# compilation
+__pycache__/
+*.pyc
+*.pyd
+*.so
+*.dll
+
+# documentation
+/docs/_build/
+/docs/reference/api/
+
+# data files
+*.pt
+*.pth
+*.mha
+*.nii
+*.nii.gz
+*.npy
+*.npz
+*.ckpt-*
+*.tfevents.*
+
+# packaging
+pyproject.tmp
+*.egg-info
+.eggs/
+/build/
+/dist/
+
+# testing
+.coverage
+.tox/
+.pytest_cache/
+
+# other
+/conda/environment.devenv.linux-64.yml
+/conda/environment.devenv.osx-64.yml
+/conda/environment.devenv.win-64.yml
+.ipynb_checkpoints/
+/.venv/
+/venv/

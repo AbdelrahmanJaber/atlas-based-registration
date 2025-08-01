@@ -1,0 +1,12 @@
+MSE grad l2         config.drop_rate = 0   -> jobs/logs/TransMorph_mse_1_diffusion_0.02/2025-07-28_10-18-49
+NCC grad l2         config.drop_rate = 0.1 -> jobs/logs/TransMorph_mse_1_diffusion_0.02/2025-07-28_15-10-09
+NCC nograd          config.drop_rate = 0.1 -> jobs/logs/TransMorph_mse_1_diffusion_0.02/2025-07-28_21-37-46
+NCC grad l1         config.drop_rate = 0.1 -> jobs/logs/TransMorph_mse_1_diffusion_0.02/2025-07-29_09-32-57
+local NCC grad l2   config.drop_rate = 0.1 -> jobs/logs/TransMorph_mse_1_diffusion_0.02/2025-07-30_08-30-12 -> slurm job heißt ncc_gradl1
+local NCC nograd    config.drop_rate = 0.1 -> jobs/logs/TransMorph_mse_1_diffusion_0.02/2025-07-30_08-31-49
+local NCC grad l1   config.drop_rate = 0.1 -> jobs/logs/TransMorph_mse_1_diffusion_0.02/2025-07-30_16-03-52
+MSE grad l2         config.drop_rate = 0.1 -> jobs/logs/TransMorph_mse_1_diffusion_0.02/2025-07-30_16-01-13
+
+
+adjusted pipeline
+MSE grad l2         config.drop_rate = 0 -> /vol/miltank/projects/practical_sose25/atlas_based_registeration/results/TransMorph/TransMorph_mse_1_diffusion_0.02/2025-08-01_01-54-54

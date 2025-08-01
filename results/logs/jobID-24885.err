@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/crop_knee_patella_last_third.py", line 32, in <module>
+    last_third_seg = NII((last_third_arr, new_affine, seg.header), seg=True)
+                          ^^^^^^^^^^^^^^
+NameError: name 'last_third_arr' is not defined. Did you mean: 'first_third_arr'?
+
+ERROR conda.cli.main_run:execute(125): `conda run python /vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/crop_knee_patella_last_third.py` failed. (See above for error)

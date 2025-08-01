@@ -1,0 +1,27 @@
+PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \
+python3 train.py             \
+--dataroot ./data/train \
+--labelroot ./data/atlas/ \
+--gpu_ids 0 \
+--name CycleMorphNils  \
+--model cycleMorph    \
+--which_model_net registUnet \
+--init_type normal \
+--batchSize 1 \
+--lr 2e-4   \
+--lr_policy step \
+--lr_decay_iters 50 \
+--inputSize 64,64,64 \
+--fineSize 64,64,64  \
+--input_nc 2 \
+--encoder_nc 16,32,32,32,32 \
+--decoder_nc 32,32,32,8,8,3 \
+--lambda_A 0.1 \
+--lambda_B 0.5 \
+--lambda_R 1.0 \
+--niter 30 \
+--display_step 5  \
+--plot_step 5             \
+--save_epoch_freq 10        \
+--display_port 8099 \
+--checkpoints_dir ./checkpoints/CycleMorph_Brain/

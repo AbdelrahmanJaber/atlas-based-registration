@@ -13,30 +13,11 @@
 #SBATCH --time=1-00:00:00
 #SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=24
-#SBATCH --mem=64G
+#SBATCH --mem=128G
 
 
-# Load python module
-ml python/anaconda3
+# Set PYTHONPATH to include current directory
+export PYTHONPATH=$(pwd):$PYTHONPATH
 
-
-# Properly initialize Conda
-# source /meta/projects/practical_sose25/.conda/etc/profile.d/conda.sh
-
-
-# Activate corresponding environment
-# If you launch your script from a terminal where your environment is already loaded, conda won't activate the environment. The following guards against that. Not necessary if you
-# alwavs run this script from a clean terminal 
-
-conda init
-conda deactivate
-
-
-# If the following does not work, try 'source activate <env-name>
-# conda activate registration
-
-conda init
-conda activate /meta/projects/practical_sose25/.conda/envs/registration
-
-# Run the program
-python utils/preprocessing.py --cuda
+# Use conda run to execute the script in the correct environment
+conda run -p /meta/projects/practical_sose25/.conda/envs/registration python /vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/crop_knee_patella_v2.py

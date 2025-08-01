@@ -1,0 +1,14 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+Calculating metrics:   0%|          | 0/73 [00:00<?, ?sample/s]Calculating metrics:   0%|          | 0/73 [00:00<?, ?sample/s]
+Traceback (most recent call last):
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/evaluation_pipeline.py", line 287, in <module>
+    main()
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/evaluation_pipeline.py", line 166, in main
+    flow_sample = flow_sample.reorient(1, 0, 2, 3) # (Depth, Channel, H, W)
+                  ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Tensor' object has no attribute 'reorient'

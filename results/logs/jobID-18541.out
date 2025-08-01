@@ -1,0 +1,4 @@
+Processing CT file: sub-MM00228_ses-20220131_sequ-203_ct.nii.gz
+Running segmentation on: sub-MM00228_ses-20220131_sequ-203_ct.nii.gz
+[44m[*] run dataset_id=520, gpu='auto'[0m[0m
+

@@ -18,9 +18,15 @@ venv/
 # Data & logs
 *.nii
 *.nii.gz
+*.mha
 *.h5
 *.ckpt
+*.tar
 *.log
+*.npy
+*.pkl
+*.v2
+*.0
 
 # Jupyter
 .ipynb_checkpoints
@@ -32,8 +38,6 @@ Thumbs.db
 # datasets
 data/
 
-# results
-results/
 
 
 TPTBox/

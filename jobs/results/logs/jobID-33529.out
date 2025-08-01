@@ -1,0 +1,49 @@
+no change     /meta/opt/anaconda3/condabin/conda
+no change     /meta/opt/anaconda3/bin/conda
+no change     /meta/opt/anaconda3/bin/conda-env
+no change     /meta/opt/anaconda3/bin/activate
+no change     /meta/opt/anaconda3/bin/deactivate
+no change     /meta/opt/anaconda3/etc/profile.d/conda.sh
+no change     /meta/opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /meta/opt/anaconda3/shell/condabin/Conda.psm1
+no change     /meta/opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /meta/opt/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /meta/opt/anaconda3/etc/profile.d/conda.csh
+no change     /u/home/fratzke/.bashrc
+No action taken.
+no change     /meta/opt/anaconda3/condabin/conda
+no change     /meta/opt/anaconda3/bin/conda
+no change     /meta/opt/anaconda3/bin/conda-env
+no change     /meta/opt/anaconda3/bin/activate
+no change     /meta/opt/anaconda3/bin/deactivate
+no change     /meta/opt/anaconda3/etc/profile.d/conda.sh
+no change     /meta/opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /meta/opt/anaconda3/shell/condabin/Conda.psm1
+no change     /meta/opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /meta/opt/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /meta/opt/anaconda3/etc/profile.d/conda.csh
+no change     /u/home/fratzke/.bashrc
+No action taken.
+Thu Jul 31 00:14:52 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.133.20             Driver Version: 570.133.20     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3090        Off |   00000000:05:00.0 Off |                  N/A |
+|  0%   48C    P8             35W /  370W |       0MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Processing: /vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom/rawdata/CTFU02116/ses-20140225/sub-CTFU02116_ses-20140225_sequ-2_ct.nii.gz
+[0m[ ] resample_from_to: shape=(200, 620, 2057),spacing=(1.0, 0.8, 0.8), origin={(-38.27, -337.05, -1609.56)}, ori=('L', 'A', 'S'), seg=False to shape=(608, 620, 2057),spacing=(0.8, 0.8, 0.8), origin={(248.33, -337.05, -1609.56)}, ori=('L', 'A', 'S'), seg=True[0m[0m
+shape raw (608, 620, 2057), shape seg (608, 620, 2057)

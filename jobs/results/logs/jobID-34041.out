@@ -1,0 +1,68 @@
+no change     /meta/opt/anaconda3/condabin/conda
+no change     /meta/opt/anaconda3/bin/conda
+no change     /meta/opt/anaconda3/bin/conda-env
+no change     /meta/opt/anaconda3/bin/activate
+no change     /meta/opt/anaconda3/bin/deactivate
+no change     /meta/opt/anaconda3/etc/profile.d/conda.sh
+no change     /meta/opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /meta/opt/anaconda3/shell/condabin/Conda.psm1
+no change     /meta/opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /meta/opt/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /meta/opt/anaconda3/etc/profile.d/conda.csh
+no change     /u/home/fratzke/.bashrc
+No action taken.
+no change     /meta/opt/anaconda3/condabin/conda
+no change     /meta/opt/anaconda3/bin/conda
+no change     /meta/opt/anaconda3/bin/conda-env
+no change     /meta/opt/anaconda3/bin/activate
+no change     /meta/opt/anaconda3/bin/deactivate
+no change     /meta/opt/anaconda3/etc/profile.d/conda.sh
+no change     /meta/opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /meta/opt/anaconda3/shell/condabin/Conda.psm1
+no change     /meta/opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /meta/opt/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /meta/opt/anaconda3/etc/profile.d/conda.csh
+no change     /u/home/fratzke/.bashrc
+No action taken.
+Fri Aug  1 10:04:47 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     Off |   00000000:01:00.0 Off |                    0 |
+|  0%   43C    P8             25W /  300W |       1MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Calculating metrics for model 'transmorph_mse' with run ID '1'
+Input directory: /vol/miltank/projects/practical_sose25/atlas_based_registeration/results/TransMorph/TransMorph_mse_1_diffusion_0.02/2025-08-01_01-54-54/2025-08-01_01-54-54
+Base name: epoch_59
+Output file: /vol/miltank/projects/practical_sose25/atlas_based_registeration/results/evaluation/Transmorph_output.txt
+Metrics to be calculated: dice, assd, jacobian, mse, l2
+Visualization: Disabled
+----------
+
+Number of samples: 37
+
+Metrics for model 'transmorph_mse' with run ID '1':
+    dice:
+    Mean: 0.6094   -   Standard Deviation: 0.2118  -   Count: 111  -   Min/Max: 0.0166/0.8601
+    assd:
+    Mean: 3.5240   -   Standard Deviation: 4.2834  -   Count: 111  -   Min/Max: 0.4083/18.1211
+    jacobian:
+    Mean: 0.4931   -   Standard Deviation: 0.0000  -   Count: 111  -   Min/Max: 0.4931/0.4931
+    mse:
+    Mean: 0.0103   -   Standard Deviation: 0.0464  -   Count: 111  -   Min/Max: 0.0007/0.2885
+    l2:
+    Mean: 70874.0312   -   Standard Deviation: 319138.1562  -   Count: 111  -   Min/Max: 4953.4956/1985115.5000
+    Adding new entry with name 'transmorph_mse_1' to the output file.

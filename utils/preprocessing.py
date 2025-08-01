@@ -35,3 +35,32 @@ for ct_path in all_ct_paths:
     if not out_file.exists():
         print(f"Running segmentation on: {ct_path.name}")
         run_total_seg(img_bids.get_nii_file(), out_file, dataset_id=520, padd=5, override=False)
+    
+
+# Process just one specific CT image
+# from pathlib import Path
+# from TPTBox import BIDS_FILE
+# from TPTBox.segmentation.TotalVibeSeg.inference_nnunet import run_total_seg
+
+# # Specific CT file path
+# ct_path = Path("/vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom/rawdata/CTFU00065/ses-20100514/sub-CTFU00065_ses-20100514_sequ-2_ct.nii.gz")
+# dataset_root = "/vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom"
+
+# print(f"Processing single CT file: {ct_path.name}")
+
+# # Wrap into BIDS structure
+# img_bids = BIDS_FILE(ct_path, dataset_root)
+
+# # Define output segmentation path
+# out_file = img_bids.get_changed_path("nii.gz", "msk", parent="preprocessed", info={"seg": "bone"})
+
+# print(f"Output will be saved to: {out_file}")
+
+# # Run segmentation (dataset_id=520 → bone)
+# if not out_file.exists():
+#     print(f"Running segmentation on: {ct_path.name}")
+#     run_total_seg(img_bids.get_nii_file(), out_file, dataset_id=520, padd=5, override=False)
+#     print(f"Segmentation completed! Output saved to: {out_file}")
+# else:
+#     print(f"Segmentation output already exists at: {out_file}")
+    

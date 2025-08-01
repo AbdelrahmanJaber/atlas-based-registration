@@ -1,0 +1,12 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+Traceback (most recent call last):
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/make_split.py", line 1, in <module>
+    from models.voxelmorph.dataset import split_subjects
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/models/voxelmorph/dataset.py", line 9, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'

@@ -1,0 +1,41 @@
+------------ Options -------------
+batchSize: 1
+beta1: 0.5
+checkpoints_dir: ./checkpoints/CycleMorph_Brain/
+continue_train: False
+dataroot: ./data/train
+decoder_nc: [32, 32, 32, 8, 8, 3]
+display_id: 1
+display_port: 8099
+display_single_pane_ncols: 0
+display_step: 5
+display_winsize: 192
+encoder_nc: [16, 32, 32, 32, 32]
+epoch_count: 1
+fineSize: [64, 64, 64]
+gpu_ids: [0]
+init_type: normal
+inputSize: [64, 64, 64]
+input_nc: 2
+isTrain: True
+labelroot: ./data/atlas/
+lambda_A: 0.1
+lambda_B: 0.5
+lambda_R: 1.0
+lr: 0.0002
+lr_decay_iters: 50
+lr_policy: step
+model: cycleMorph
+nThreads: 2
+name: CycleMorph_Brain
+niter: 30
+niter_decay: 100
+no_html: False
+plot_step: 5
+saveOpt: 1
+save_epoch_freq: 10
+save_latest_freq: 5000
+update_html_freq: 1000
+which_epoch: latest
+which_model_net: registUnet
+-------------- End ----------------

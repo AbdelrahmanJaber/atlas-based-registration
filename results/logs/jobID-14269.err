@@ -1,0 +1,38 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+PackagesNotFoundError: The following packages are not available from current channels:
+
+  - tptbox
+
+Current channels:
+
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+
+To search for alternate channels that may provide the conda package you're
+looking for, navigate to
+
+    https://anaconda.org
+
+and use the search bar at the top of the page.
+
+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+  WARNING: The scripts nib-conform, nib-convert, nib-dicomfs, nib-diff, nib-ls, nib-nifti-dx, nib-roi, nib-stats, nib-tck2trk, nib-trk2tck and parrec2nii are installed in '/u/home/jaba/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Traceback (most recent call last):
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/preprocessing.py", line 23, in <module>
+    from TPTBox.segmentation.TotalVibeSeg.inference_nnunet import run_total_seg
+  File "/u/home/jaba/.local/lib/python3.12/site-packages/TPTBox/segmentation/__init__.py", line 4, in <module>
+    from TPTBox.segmentation.TotalVibeSeg import run_totalvibeseg
+  File "/u/home/jaba/.local/lib/python3.12/site-packages/TPTBox/segmentation/TotalVibeSeg/__init__.py", line 3, in <module>
+    from TPTBox.segmentation.TotalVibeSeg.totalvibeseg import extract_vertebra_bodies_from_totalVibe, run_totalvibeseg, total_vibe_map
+  File "/u/home/jaba/.local/lib/python3.12/site-packages/TPTBox/segmentation/TotalVibeSeg/totalvibeseg.py", line 7, in <module>
+    from TPTBox.segmentation.TotalVibeSeg.inference_nnunet import run_inference_on_file
+  File "/u/home/jaba/.local/lib/python3.12/site-packages/TPTBox/segmentation/TotalVibeSeg/inference_nnunet.py", line 11, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'

@@ -1,0 +1,27 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+Traceback (most recent call last):
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/kristin_seg_ct_patella_crop_nearly_working.py", line 133, in <module>
+    preprocess_fullbody()
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/kristin_seg_ct_patella_crop_nearly_working.py", line 98, in preprocess_fullbody
+    seg.rescale((0.8, 0.8, 1))
+  File "/u/home/fratzke/.local/lib/python3.12/site-packages/TPTBox/core/nii_wrapper.py", line 813, in rescale
+    new_img = _resample_from_to(self, (new_shp, new_aff,voxel_spacing), order=order, mode=mode,align_corners=align_corners)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/home/fratzke/.local/lib/python3.12/site-packages/TPTBox/core/internal/nii_help.py", line 148, in _resample_from_to
+    data = scipy_img.affine_transform(from_img.get_array(), rzs, trans, to_shape, order=order, mode=mode, cval=from_img.get_c_val())  # type: ignore
+                                      ^^^^^^^^^^^^^^^^^^^^
+  File "/u/home/fratzke/.local/lib/python3.12/site-packages/TPTBox/core/nii_wrapper.py", line 488, in get_array
+    return self.get_seg_array()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/u/home/fratzke/.local/lib/python3.12/site-packages/TPTBox/core/nii_wrapper.py", line 484, in get_seg_array
+    self._unpack()
+  File "/u/home/fratzke/.local/lib/python3.12/site-packages/TPTBox/core/nii_wrapper.py", line 317, in _unpack
+    raise EOFError(f"{self.nii.get_filename()}: {e!s}\nThe file is probably brocken beyond repair, due killing a software during nifty saving.") from None
+EOFError: /vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom/derivatives/CTFU00931/ses-20100420/sub-CTFU00931_ses-20100420_sequ-4_seg-bone_msk.nii.gz: Expected 720312500 bytes, got 476953125 bytes from 
+ - could the file be damaged?
+The file is probably brocken beyond repair, due killing a software during nifty saving.

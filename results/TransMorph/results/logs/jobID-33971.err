@@ -1,0 +1,38 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+####################################
+/u/home/fratzke/.local/lib/python3.12/site-packages/timm/models/layers/__init__.py:48: FutureWarning:
+
+Importing from timm.models.layers is deprecated, please import via timm.layers
+
+  File "/vol/miltank/users/fratzke/Documents/atlas-based-registration/models/TransMorph_Transformer_for_Medical_Image_Registration/TransMorph/infer_TransMorph.py", line 10, in <module>
+    from models.TransMorph import CONFIGS as CONFIGS_TM
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/vol/miltank/users/fratzke/Documents/atlas-based-registration/models/TransMorph_Transformer_for_Medical_Image_Registration/TransMorph/models/TransMorph.py", line 21, in <module>
+    from timm.models.layers import DropPath, trunc_normal_, to_3tuple
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/u/home/fratzke/.local/lib/python3.12/site-packages/timm/models/layers/__init__.py", line 48, in <module>
+    warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+####################################
+Traceback (most recent call last):
+  File "/vol/miltank/users/fratzke/Documents/atlas-based-registration/models/TransMorph_Transformer_for_Medical_Image_Registration/TransMorph/infer_TransMorph.py", line 125, in <module>
+    main()
+  File "/vol/miltank/users/fratzke/Documents/atlas-based-registration/models/TransMorph_Transformer_for_Medical_Image_Registration/TransMorph/infer_TransMorph.py", line 19, in main
+    dict = utils.process_label()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/vol/miltank/users/fratzke/Documents/atlas-based-registration/models/TransMorph_Transformer_for_Medical_Image_Registration/TransMorph/utils.py", line 167, in process_label
+    file1 = open('label_info.txt', 'r')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'label_info.txt'

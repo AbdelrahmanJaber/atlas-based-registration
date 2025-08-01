@@ -1,0 +1,12 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+Traceback (most recent call last):
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/evaluation_pipeline.py", line 286, in <module>
+    main()
+  File "/vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/evaluation_pipeline.py", line 112, in main
+    raise FileNotFoundError(f"Atlas segmentation file '{atlas_seg_file}' does not exist.")
+FileNotFoundError: Atlas segmentation file '/vol/miltank/projects/practical_sose25/atlas_based_registeration/data/nils/best_model_epoch_5_atlas_seg.npy' does not exist.

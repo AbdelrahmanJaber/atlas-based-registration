@@ -1,0 +1,59 @@
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+CondaError: Run 'conda init' before 'conda activate'
+
+2025-08-01 01:49:52.543362: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:485] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-08-01 01:49:52.910909: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:8454] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2025-08-01 01:49:53.019098: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1452] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-08-01 01:49:53.767044: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-08-01 01:49:56.560832: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+####################################
+/u/home/fratzke/.local/lib/python3.12/site-packages/timm/models/layers/__init__.py:48: FutureWarning:
+
+Importing from timm.models.layers is deprecated, please import via timm.layers
+
+  File "/vol/miltank/users/fratzke/Documents/atlas-based-registration/models/TransMorph_Transformer_for_Medical_Image_Registration/TransMorph/train_TransMorph.py", line 13, in <module>
+    from models.TransMorph import CONFIGS as CONFIGS_TM
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/vol/miltank/users/fratzke/Documents/atlas-based-registration/models/TransMorph_Transformer_for_Medical_Image_Registration/TransMorph/models/TransMorph.py", line 21, in <module>
+    from timm.models.layers import DropPath, trunc_normal_, to_3tuple
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/u/home/fratzke/.local/lib/python3.12/site-packages/timm/models/layers/__init__.py", line 48, in <module>
+    warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+####################################
+####################################
+/u/home/fratzke/.local/lib/python3.12/site-packages/torch/functional.py:507: UserWarning:
+
+torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3549.)
+
+  File "/vol/miltank/users/fratzke/Documents/atlas-based-registration/models/TransMorph_Transformer_for_Medical_Image_Registration/TransMorph/train_TransMorph.py", line 449, in <module>
+    main()
+  File "/vol/miltank/users/fratzke/Documents/atlas-based-registration/models/TransMorph_Transformer_for_Medical_Image_Registration/TransMorph/train_TransMorph.py", line 57, in main
+    model = TransMorph.TransMorph(config)
+  File "/vol/miltank/users/fratzke/Documents/atlas-based-registration/models/TransMorph_Transformer_for_Medical_Image_Registration/TransMorph/models/TransMorph.py", line 818, in __init__
+    self.transformer = SwinTransformer(patch_size=config.patch_size,
+  File "/vol/miltank/users/fratzke/Documents/atlas-based-registration/models/TransMorph_Transformer_for_Medical_Image_Registration/TransMorph/models/TransMorph.py", line 594, in __init__
+    layer = BasicLayer(dim=int(embed_dim * 2 ** i_layer),
+  File "/vol/miltank/users/fratzke/Documents/atlas-based-registration/models/TransMorph_Transformer_for_Medical_Image_Registration/TransMorph/models/TransMorph.py", line 347, in __init__
+    SwinTransformerBlock(
+  File "/vol/miltank/users/fratzke/Documents/atlas-based-registration/models/TransMorph_Transformer_for_Medical_Image_Registration/TransMorph/models/TransMorph.py", line 191, in __init__
+    self.attn = WindowAttention(
+  File "/vol/miltank/users/fratzke/Documents/atlas-based-registration/models/TransMorph_Transformer_for_Medical_Image_Registration/TransMorph/models/TransMorph.py", line 107, in __init__
+    coords = torch.stack(torch.meshgrid([coords_h, coords_w, coords_t]))  # 3, Wh, Ww, Wt
+  File "/u/home/fratzke/.local/lib/python3.12/site-packages/torch/functional.py", line 492, in meshgrid
+    return _meshgrid(*tensors, indexing=indexing)
+  File "/u/home/fratzke/.local/lib/python3.12/site-packages/torch/functional.py", line 507, in _meshgrid
+    return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+####################################
+slurmstepd: error: *** JOB 33967 ON atlas CANCELLED AT 2025-08-01T02:32:19 ***

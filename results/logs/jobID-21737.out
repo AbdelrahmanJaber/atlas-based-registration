@@ -1,0 +1,7 @@
+Warning: MONAI not available. Using regular dataset loading.
+Loading CT data from: /vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom/rawdata/CTFU00065/ses-20100514/sub-CTFU00065_ses-20100514_sequ-4_ct.nii.gz
+Clipping Hounsfield units...
+[96m[*] Save /vol/miltank/projects/practical_sose25/atlas_based_registeration/data/dataset-myelom/rawdata/CTFU00065/ses-20100514/sub-CTFU00065_ses-20100514_sequ-4_ct_preprocessed.nii.gz as float64[0m[0m
+Generating bone segmentation for CTFU00065...
+[44m[*] run dataset_id=520, gpu='auto'[0m[0m
+

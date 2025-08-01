@@ -1,0 +1,55 @@
+no change     /meta/opt/anaconda3/condabin/conda
+no change     /meta/opt/anaconda3/bin/conda
+no change     /meta/opt/anaconda3/bin/conda-env
+no change     /meta/opt/anaconda3/bin/activate
+no change     /meta/opt/anaconda3/bin/deactivate
+no change     /meta/opt/anaconda3/etc/profile.d/conda.sh
+no change     /meta/opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /meta/opt/anaconda3/shell/condabin/Conda.psm1
+no change     /meta/opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /meta/opt/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /meta/opt/anaconda3/etc/profile.d/conda.csh
+no change     /u/home/fratzke/.bashrc
+No action taken.
+no change     /meta/opt/anaconda3/condabin/conda
+no change     /meta/opt/anaconda3/bin/conda
+no change     /meta/opt/anaconda3/bin/conda-env
+no change     /meta/opt/anaconda3/bin/activate
+no change     /meta/opt/anaconda3/bin/deactivate
+no change     /meta/opt/anaconda3/etc/profile.d/conda.sh
+no change     /meta/opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /meta/opt/anaconda3/shell/condabin/Conda.psm1
+no change     /meta/opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /meta/opt/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /meta/opt/anaconda3/etc/profile.d/conda.csh
+no change     /u/home/fratzke/.bashrc
+No action taken.
+Thu Jul 31 23:26:02 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     Off |   00000000:41:00.0 Off |                    0 |
+|  0%   37C    P8             24W /  300W |       1MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Calculating metrics for model 'nils_spezial' with run ID '1'
+Input directory: /vol/miltank/projects/practical_sose25/atlas_based_registeration/data/nils
+Base name: best_model_epoch_5
+Output file: /vol/miltank/projects/practical_sose25/atlas_based_registeration/utils/evaluation/output.txt
+Metrics to be calculated: dice, assd, jacobian, mse, l2
+Visualization: Disabled
+----------
+
+Number of samples: 73

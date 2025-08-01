@@ -1,0 +1,7 @@
+/var/lib/slurm/slurmd/job12079/slurm_script: line 24: /meta/projects/practical_sose25/.conda/etc/profile.d/conda.sh: No such file or directory
+
+CondaError: Run 'conda init' before 'conda deactivate'
+
+
+CondaError: Run 'conda init' before 'conda activate'
+

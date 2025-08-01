@@ -1,0 +1,1100 @@
+no change     /meta/opt/anaconda3/condabin/conda
+no change     /meta/opt/anaconda3/bin/conda
+no change     /meta/opt/anaconda3/bin/conda-env
+no change     /meta/opt/anaconda3/bin/activate
+no change     /meta/opt/anaconda3/bin/deactivate
+no change     /meta/opt/anaconda3/etc/profile.d/conda.sh
+no change     /meta/opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /meta/opt/anaconda3/shell/condabin/Conda.psm1
+no change     /meta/opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /meta/opt/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /meta/opt/anaconda3/etc/profile.d/conda.csh
+no change     /u/home/fratzke/.bashrc
+No action taken.
+Fri Aug  1 01:49:44 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     Off |   00000000:41:00.0 Off |                    0 |
+|  0%   34C    P8             24W /  300W |       1MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Using GPU: NVIDIA A40
+Train: 146, Valid: 37
+Number of training samples: 146
+Training Starts
+Iter 1 of 146 loss 0.0084, Img Sim: 0.008401, Reg: 0.000000
+Iter 2 of 146 loss 0.0167, Img Sim: 0.016518, Reg: 0.000000
+Iter 3 of 146 loss 0.0123, Img Sim: 0.012399, Reg: 0.000001
+Iter 4 of 146 loss 0.0188, Img Sim: 0.019369, Reg: 0.000002
+Iter 5 of 146 loss 0.0188, Img Sim: 0.018945, Reg: 0.000004
+Iter 6 of 146 loss 0.0102, Img Sim: 0.010195, Reg: 0.000008
+Iter 7 of 146 loss 0.0015, Img Sim: 0.001543, Reg: 0.000010
+Iter 8 of 146 loss 0.0098, Img Sim: 0.009729, Reg: 0.000011
+Iter 9 of 146 loss 0.0238, Img Sim: 0.024554, Reg: 0.000015
+Iter 10 of 146 loss 0.0209, Img Sim: 0.021271, Reg: 0.000021
+Iter 11 of 146 loss 0.0052, Img Sim: 0.005386, Reg: 0.000028
+Iter 12 of 146 loss 0.0125, Img Sim: 0.012489, Reg: 0.000039
+Iter 13 of 146 loss 0.0160, Img Sim: 0.015484, Reg: 0.000037
+Iter 14 of 146 loss 0.0042, Img Sim: 0.003953, Reg: 0.000059
+Iter 15 of 146 loss 0.0066, Img Sim: 0.007248, Reg: 0.000077
+Iter 16 of 146 loss 0.0119, Img Sim: 0.011683, Reg: 0.000038
+Iter 17 of 146 loss 0.0068, Img Sim: 0.006795, Reg: 0.000080
+Iter 18 of 146 loss 0.0207, Img Sim: 0.021473, Reg: 0.000086
+Iter 19 of 146 loss 0.0092, Img Sim: 0.009482, Reg: 0.000117
+Iter 20 of 146 loss 0.0071, Img Sim: 0.007211, Reg: 0.000138
+Iter 21 of 146 loss 0.0109, Img Sim: 0.010564, Reg: 0.000122
+Iter 22 of 146 loss 0.0079, Img Sim: 0.007856, Reg: 0.000148
+Iter 23 of 146 loss 0.0139, Img Sim: 0.013739, Reg: 0.000134
+Iter 24 of 146 loss 0.0159, Img Sim: 0.015510, Reg: 0.000161
+Iter 25 of 146 loss 0.0188, Img Sim: 0.018050, Reg: 0.000183
+Iter 26 of 146 loss 0.0168, Img Sim: 0.015955, Reg: 0.000187
+Iter 27 of 146 loss 0.0133, Img Sim: 0.012598, Reg: 0.000251
+Iter 28 of 146 loss 0.0065, Img Sim: 0.006456, Reg: 0.000229
+Iter 29 of 146 loss 0.0131, Img Sim: 0.013018, Reg: 0.000150
+Iter 30 of 146 loss 0.0228, Img Sim: 0.022112, Reg: 0.000170
+Iter 31 of 146 loss 0.0060, Img Sim: 0.006103, Reg: 0.000248
+Iter 32 of 146 loss 0.0081, Img Sim: 0.007231, Reg: 0.000223
+Iter 33 of 146 loss 0.0038, Img Sim: 0.003482, Reg: 0.000242
+Iter 34 of 146 loss 0.0050, Img Sim: 0.005195, Reg: 0.000127
+Iter 35 of 146 loss 0.0138, Img Sim: 0.012938, Reg: 0.000149
+Iter 36 of 146 loss 0.0122, Img Sim: 0.012374, Reg: 0.000190
+Iter 37 of 146 loss 0.0160, Img Sim: 0.016689, Reg: 0.000218
+Iter 38 of 146 loss 0.0177, Img Sim: 0.017439, Reg: 0.000227
+Iter 39 of 146 loss 0.0109, Img Sim: 0.010116, Reg: 0.000235
+Iter 40 of 146 loss 0.0068, Img Sim: 0.005492, Reg: 0.000303
+Iter 41 of 146 loss 0.0089, Img Sim: 0.008258, Reg: 0.000192
+Iter 42 of 146 loss 0.0171, Img Sim: 0.016323, Reg: 0.000222
+Iter 43 of 146 loss 0.0104, Img Sim: 0.009802, Reg: 0.000284
+Iter 44 of 146 loss 0.0161, Img Sim: 0.016464, Reg: 0.000286
+Iter 45 of 146 loss 0.0143, Img Sim: 0.013512, Reg: 0.000303
+Iter 46 of 146 loss 0.0138, Img Sim: 0.012648, Reg: 0.000288
+Iter 47 of 146 loss 0.0123, Img Sim: 0.012760, Reg: 0.000402
+Iter 48 of 146 loss 0.0116, Img Sim: 0.012007, Reg: 0.000407
+Iter 49 of 146 loss 0.0135, Img Sim: 0.013945, Reg: 0.000299
+Iter 50 of 146 loss 0.0097, Img Sim: 0.008686, Reg: 0.000386
+Iter 51 of 146 loss 0.0090, Img Sim: 0.009407, Reg: 0.000385
+Iter 52 of 146 loss 0.0252, Img Sim: 0.024309, Reg: 0.000294
+Iter 53 of 146 loss 0.0193, Img Sim: 0.018156, Reg: 0.000372
+Iter 54 of 146 loss 0.0062, Img Sim: 0.006755, Reg: 0.000377
+Iter 55 of 146 loss 0.0083, Img Sim: 0.008352, Reg: 0.000332
+Iter 56 of 146 loss 0.0073, Img Sim: 0.006136, Reg: 0.000357
+Iter 57 of 146 loss 0.0106, Img Sim: 0.009637, Reg: 0.000243
+Iter 58 of 146 loss 0.0031, Img Sim: 0.003539, Reg: 0.000385
+Iter 59 of 146 loss 0.0156, Img Sim: 0.015945, Reg: 0.000298
+Iter 60 of 146 loss 0.0122, Img Sim: 0.013156, Reg: 0.000245
+Iter 61 of 146 loss 0.0056, Img Sim: 0.005029, Reg: 0.000447
+Iter 62 of 146 loss 0.0066, Img Sim: 0.006492, Reg: 0.000379
+Iter 63 of 146 loss 0.0051, Img Sim: 0.004534, Reg: 0.000346
+Iter 64 of 146 loss 0.0180, Img Sim: 0.018740, Reg: 0.000232
+Iter 65 of 146 loss 0.0085, Img Sim: 0.008197, Reg: 0.000260
+Iter 66 of 146 loss 0.0104, Img Sim: 0.010172, Reg: 0.000330
+Iter 67 of 146 loss 0.0116, Img Sim: 0.012431, Reg: 0.000315
+Iter 68 of 146 loss 0.0111, Img Sim: 0.009833, Reg: 0.000384
+Iter 69 of 146 loss 0.0072, Img Sim: 0.006078, Reg: 0.000409
+Iter 70 of 146 loss 0.0079, Img Sim: 0.007435, Reg: 0.000379
+Iter 71 of 146 loss 0.0105, Img Sim: 0.009649, Reg: 0.000324
+Iter 72 of 146 loss 0.0083, Img Sim: 0.007902, Reg: 0.000335
+Iter 73 of 146 loss 0.0063, Img Sim: 0.006657, Reg: 0.000405
+Iter 74 of 146 loss 0.0094, Img Sim: 0.008398, Reg: 0.000344
+Iter 75 of 146 loss 0.0074, Img Sim: 0.006667, Reg: 0.000390
+Iter 76 of 146 loss 0.0073, Img Sim: 0.008173, Reg: 0.000336
+Iter 77 of 146 loss 0.0077, Img Sim: 0.008040, Reg: 0.000368
+Iter 78 of 146 loss 0.0075, Img Sim: 0.006398, Reg: 0.000414
+Iter 79 of 146 loss 0.0058, Img Sim: 0.006209, Reg: 0.000408
+Iter 80 of 146 loss 0.0092, Img Sim: 0.009934, Reg: 0.000438
+Iter 81 of 146 loss 0.0103, Img Sim: 0.009239, Reg: 0.000445
+Iter 82 of 146 loss 0.0083, Img Sim: 0.007062, Reg: 0.000347
+Iter 83 of 146 loss 0.0083, Img Sim: 0.008901, Reg: 0.000382
+Iter 84 of 146 loss 0.0235, Img Sim: 0.023791, Reg: 0.000250
+Iter 85 of 146 loss 0.0088, Img Sim: 0.009126, Reg: 0.000433
+Iter 86 of 146 loss 0.0069, Img Sim: 0.006582, Reg: 0.000448
+Iter 87 of 146 loss 0.0223, Img Sim: 0.023349, Reg: 0.000432
+Iter 88 of 146 loss 0.0103, Img Sim: 0.010522, Reg: 0.000404
+Iter 89 of 146 loss 0.0071, Img Sim: 0.007411, Reg: 0.000497
+Iter 90 of 146 loss 0.0160, Img Sim: 0.014536, Reg: 0.000325
+Iter 91 of 146 loss 0.0089, Img Sim: 0.008898, Reg: 0.000427
+Iter 92 of 146 loss 0.0125, Img Sim: 0.012982, Reg: 0.000374
+Iter 93 of 146 loss 0.0094, Img Sim: 0.008819, Reg: 0.000502
+Iter 94 of 146 loss 0.0068, Img Sim: 0.005552, Reg: 0.000559
+Iter 95 of 146 loss 0.0274, Img Sim: 0.025653, Reg: 0.000366
+Iter 96 of 146 loss 0.0062, Img Sim: 0.005202, Reg: 0.000512
+Iter 97 of 146 loss 0.0084, Img Sim: 0.008819, Reg: 0.000433
+Iter 98 of 146 loss 0.0144, Img Sim: 0.015069, Reg: 0.000376
+Iter 99 of 146 loss 0.0071, Img Sim: 0.006398, Reg: 0.000482
+Iter 100 of 146 loss 0.0048, Img Sim: 0.004259, Reg: 0.000476
+Iter 101 of 146 loss 0.0064, Img Sim: 0.005721, Reg: 0.000339
+Iter 102 of 146 loss 0.0099, Img Sim: 0.009144, Reg: 0.000331
+Iter 103 of 146 loss 0.0108, Img Sim: 0.009322, Reg: 0.000397
+Iter 104 of 146 loss 0.0122, Img Sim: 0.012422, Reg: 0.000436
+Iter 105 of 146 loss 0.0051, Img Sim: 0.004801, Reg: 0.000488
+Iter 106 of 146 loss 0.0257, Img Sim: 0.024361, Reg: 0.000428
+Iter 107 of 146 loss 0.0090, Img Sim: 0.008149, Reg: 0.000819
+Iter 108 of 146 loss 0.0087, Img Sim: 0.008098, Reg: 0.000468
+Iter 109 of 146 loss 0.0156, Img Sim: 0.014049, Reg: 0.000425
+Iter 110 of 146 loss 0.0141, Img Sim: 0.014210, Reg: 0.000471
+Iter 111 of 146 loss 0.0072, Img Sim: 0.006963, Reg: 0.000480
+Iter 112 of 146 loss 0.0042, Img Sim: 0.003176, Reg: 0.000522
+Iter 113 of 146 loss 0.0081, Img Sim: 0.008724, Reg: 0.000461
+Iter 114 of 146 loss 0.0151, Img Sim: 0.013904, Reg: 0.000373
+Iter 115 of 146 loss 0.0112, Img Sim: 0.010230, Reg: 0.000488
+Iter 116 of 146 loss 0.0105, Img Sim: 0.009671, Reg: 0.000438
+Iter 117 of 146 loss 0.0094, Img Sim: 0.009088, Reg: 0.000456
+Iter 118 of 146 loss 0.0046, Img Sim: 0.004844, Reg: 0.000590
+Iter 119 of 146 loss 0.0077, Img Sim: 0.006714, Reg: 0.000445
+Iter 120 of 146 loss 0.0060, Img Sim: 0.005993, Reg: 0.000431
+Iter 121 of 146 loss 0.0108, Img Sim: 0.011095, Reg: 0.000339
+Iter 122 of 146 loss 0.0033, Img Sim: 0.002910, Reg: 0.000560
+Iter 123 of 146 loss 0.0253, Img Sim: 0.023075, Reg: 0.000377
+Iter 124 of 146 loss 0.0128, Img Sim: 0.011252, Reg: 0.000445
+Iter 125 of 146 loss 0.0110, Img Sim: 0.009579, Reg: 0.000412
+Iter 126 of 146 loss 0.0035, Img Sim: 0.003521, Reg: 0.000461
+Iter 127 of 146 loss 0.0134, Img Sim: 0.011887, Reg: 0.000377
+Iter 128 of 146 loss 0.0060, Img Sim: 0.006588, Reg: 0.000451
+Iter 129 of 146 loss 0.0052, Img Sim: 0.004602, Reg: 0.000379
+Iter 130 of 146 loss 0.0069, Img Sim: 0.007030, Reg: 0.000401
+Iter 131 of 146 loss 0.0134, Img Sim: 0.013120, Reg: 0.000350
+Iter 132 of 146 loss 0.0097, Img Sim: 0.008099, Reg: 0.000401
+Iter 133 of 146 loss 0.0200, Img Sim: 0.021592, Reg: 0.000521
+Iter 134 of 146 loss 0.0232, Img Sim: 0.021514, Reg: 0.000513
+Iter 135 of 146 loss 0.0130, Img Sim: 0.011241, Reg: 0.000573
+Iter 136 of 146 loss 0.0187, Img Sim: 0.016764, Reg: 0.000513
+Iter 137 of 146 loss 0.0094, Img Sim: 0.007661, Reg: 0.000552
+Iter 138 of 146 loss 0.0118, Img Sim: 0.010907, Reg: 0.000523
+Iter 139 of 146 loss 0.0075, Img Sim: 0.006150, Reg: 0.000710
+Iter 140 of 146 loss 0.0083, Img Sim: 0.008427, Reg: 0.000488
+Iter 141 of 146 loss 0.0083, Img Sim: 0.006994, Reg: 0.000522
+Iter 142 of 146 loss 0.0043, Img Sim: 0.003217, Reg: 0.000509
+Iter 143 of 146 loss 0.0045, Img Sim: 0.004559, Reg: 0.000539
+Iter 144 of 146 loss 0.0253, Img Sim: 0.024428, Reg: 0.000464
+Iter 145 of 146 loss 0.0132, Img Sim: 0.011622, Reg: 0.000530
+Iter 146 of 146 loss 0.0032, Img Sim: 0.002812, Reg: 0.000560
+Epoch 0 loss 0.0111
+0.5184476375579834
+0.686573714017868
+0.6473949352900187
+0.7036727666854858
+0.6890847682952881
+0.664750357468923
+0.6596647671290806
+0.6597958207130432
+0.6699073844485812
+0.6633235871791839
+0.6878462758931246
+0.6731098492940267
+0.686574284846966
+0.6824258736201695
+0.6849153995513916
+0.6933100111782551
+0.6924706452033099
+0.7038111852275001
+0.7060882762858742
+0.7110498696565628
+0.711304213319506
+0.7040754610841925
+0.7130614804184955
+0.7160247539480528
+0.7247524762153625
+0.729052124115137
+0.7219726708200243
+0.7260989142315728
+0.7290973848310011
+0.7312711377938589
+0.7296666849044061
+0.7337093744426966
+0.735787671623808
+0.7389971000306746
+0.7407072527068002
+0.737343031499121
+0.740101205336081
+replacing 0 with 0
+save epoch_0_atlas.npy epoch 0
+save epoch_0_atlas_segs.npy epoch 0
+save epoch_0_warped.npy epoch 0
+save epoch_0_warped_segs.npy epoch 0
+save epoch_0_input.npy epoch 0
+save epoch_0_input_segs.npy epoch 0
+save epoch_0_flow.npy epoch 0
+save epoch_0_grid.npy epoch 0
+Training Starts
+Iter 1 of 146 loss 0.0057, Img Sim: 0.005038, Reg: 0.000562
+Iter 2 of 146 loss 0.0087, Img Sim: 0.007117, Reg: 0.000531
+Iter 3 of 146 loss 0.0274, Img Sim: 0.025402, Reg: 0.000628
+Iter 4 of 146 loss 0.0045, Img Sim: 0.004260, Reg: 0.000546
+Iter 5 of 146 loss 0.0038, Img Sim: 0.003074, Reg: 0.000588
+Iter 6 of 146 loss 0.0176, Img Sim: 0.018170, Reg: 0.000392
+Iter 7 of 146 loss 0.0150, Img Sim: 0.013682, Reg: 0.000393
+Iter 8 of 146 loss 0.0061, Img Sim: 0.005296, Reg: 0.000485
+Iter 9 of 146 loss 0.0053, Img Sim: 0.004371, Reg: 0.000598
+Iter 10 of 146 loss 0.0095, Img Sim: 0.008983, Reg: 0.000474
+Iter 11 of 146 loss 0.0165, Img Sim: 0.015191, Reg: 0.000437
+Iter 12 of 146 loss 0.0065, Img Sim: 0.005690, Reg: 0.000543
+Iter 13 of 146 loss 0.0101, Img Sim: 0.009178, Reg: 0.000536
+Iter 14 of 146 loss 0.0058, Img Sim: 0.006061, Reg: 0.000600
+Iter 15 of 146 loss 0.0046, Img Sim: 0.003641, Reg: 0.000515
+Iter 16 of 146 loss 0.0075, Img Sim: 0.007393, Reg: 0.000492
+Iter 17 of 146 loss 0.0097, Img Sim: 0.008581, Reg: 0.000490
+Iter 18 of 146 loss 0.0309, Img Sim: 0.028658, Reg: 0.000542
+Iter 19 of 146 loss 0.0085, Img Sim: 0.006873, Reg: 0.000606
+Iter 20 of 146 loss 0.0081, Img Sim: 0.006559, Reg: 0.000806
+Iter 21 of 146 loss 0.0149, Img Sim: 0.016295, Reg: 0.000830
+Iter 22 of 146 loss 0.0043, Img Sim: 0.003080, Reg: 0.000579
+Iter 23 of 146 loss 0.0100, Img Sim: 0.009897, Reg: 0.000643
+Iter 24 of 146 loss 0.0022, Img Sim: 0.002204, Reg: 0.000618
+Iter 25 of 146 loss 0.0145, Img Sim: 0.014107, Reg: 0.000484
+Iter 26 of 146 loss 0.0113, Img Sim: 0.009955, Reg: 0.000458
+Iter 27 of 146 loss 0.0056, Img Sim: 0.005642, Reg: 0.000606
+Iter 28 of 146 loss 0.0046, Img Sim: 0.003318, Reg: 0.000801
+Iter 29 of 146 loss 0.0231, Img Sim: 0.021444, Reg: 0.000594
+Iter 30 of 146 loss 0.0089, Img Sim: 0.007667, Reg: 0.000619
+Iter 31 of 146 loss 0.0169, Img Sim: 0.017515, Reg: 0.000744
+Iter 32 of 146 loss 0.0113, Img Sim: 0.010676, Reg: 0.000721
+Iter 33 of 146 loss 0.0050, Img Sim: 0.004022, Reg: 0.000770
+Iter 34 of 146 loss 0.0060, Img Sim: 0.005733, Reg: 0.000680
+Iter 35 of 146 loss 0.0128, Img Sim: 0.010597, Reg: 0.000710
+Iter 36 of 146 loss 0.0057, Img Sim: 0.005673, Reg: 0.000522
+Iter 37 of 146 loss 0.0043, Img Sim: 0.004445, Reg: 0.000646
+Iter 38 of 146 loss 0.0040, Img Sim: 0.003483, Reg: 0.000580
+Iter 39 of 146 loss 0.0079, Img Sim: 0.008552, Reg: 0.000503
+Iter 40 of 146 loss 0.0097, Img Sim: 0.008608, Reg: 0.000513
+Iter 41 of 146 loss 0.0075, Img Sim: 0.007930, Reg: 0.000530
+Iter 42 of 146 loss 0.0053, Img Sim: 0.005193, Reg: 0.000582
+Iter 43 of 146 loss 0.0044, Img Sim: 0.003857, Reg: 0.000524
+Iter 44 of 146 loss 0.0089, Img Sim: 0.008070, Reg: 0.000648
+Iter 45 of 146 loss 0.0021, Img Sim: 0.001252, Reg: 0.000724
+Iter 46 of 146 loss 0.0139, Img Sim: 0.014987, Reg: 0.000505
+Iter 47 of 146 loss 0.0040, Img Sim: 0.003338, Reg: 0.000457
+Iter 48 of 146 loss 0.0077, Img Sim: 0.007110, Reg: 0.000424
+Iter 49 of 146 loss 0.0083, Img Sim: 0.007638, Reg: 0.000525
+Iter 50 of 146 loss 0.0078, Img Sim: 0.007548, Reg: 0.000470
+Iter 51 of 146 loss 0.0246, Img Sim: 0.023218, Reg: 0.000456
+Iter 52 of 146 loss 0.0027, Img Sim: 0.002664, Reg: 0.000562
+Iter 53 of 146 loss 0.0109, Img Sim: 0.011199, Reg: 0.000703
+Iter 54 of 146 loss 0.0147, Img Sim: 0.013154, Reg: 0.000568
+Iter 55 of 146 loss 0.0029, Img Sim: 0.002624, Reg: 0.000482
+Iter 56 of 146 loss 0.0128, Img Sim: 0.011362, Reg: 0.000497
+Iter 57 of 146 loss 0.0077, Img Sim: 0.007860, Reg: 0.000675
+Iter 58 of 146 loss 0.0159, Img Sim: 0.013279, Reg: 0.000740
+Iter 59 of 146 loss 0.0040, Img Sim: 0.002411, Reg: 0.001023
+Iter 60 of 146 loss 0.0059, Img Sim: 0.004823, Reg: 0.000684
+Iter 61 of 146 loss 0.0063, Img Sim: 0.005022, Reg: 0.000666
+Iter 62 of 146 loss 0.0037, Img Sim: 0.003330, Reg: 0.000679
+Iter 63 of 146 loss 0.0125, Img Sim: 0.013066, Reg: 0.000577
+Iter 64 of 146 loss 0.0081, Img Sim: 0.006918, Reg: 0.000534
+Iter 65 of 146 loss 0.0064, Img Sim: 0.006650, Reg: 0.000535
+Iter 66 of 146 loss 0.0069, Img Sim: 0.005889, Reg: 0.000460
+Iter 67 of 146 loss 0.0031, Img Sim: 0.001966, Reg: 0.000708
+Iter 68 of 146 loss 0.0059, Img Sim: 0.005787, Reg: 0.000692
+Iter 69 of 146 loss 0.0048, Img Sim: 0.004947, Reg: 0.000606
+Iter 70 of 146 loss 0.0055, Img Sim: 0.004535, Reg: 0.000630
+Iter 71 of 146 loss 0.0054, Img Sim: 0.004613, Reg: 0.000578
+Iter 72 of 146 loss 0.0027, Img Sim: 0.003036, Reg: 0.000583
+Iter 73 of 146 loss 0.0054, Img Sim: 0.005589, Reg: 0.000592
+Iter 74 of 146 loss 0.0079, Img Sim: 0.006404, Reg: 0.000544
+Iter 75 of 146 loss 0.0107, Img Sim: 0.010940, Reg: 0.000525
+Iter 76 of 146 loss 0.0039, Img Sim: 0.004401, Reg: 0.000664
+Iter 77 of 146 loss 0.0132, Img Sim: 0.011792, Reg: 0.000616
+Iter 78 of 146 loss 0.0044, Img Sim: 0.003849, Reg: 0.000595
+Iter 79 of 146 loss 0.0049, Img Sim: 0.005048, Reg: 0.000536
+Iter 80 of 146 loss 0.0030, Img Sim: 0.002115, Reg: 0.000602
+Iter 81 of 146 loss 0.0051, Img Sim: 0.004528, Reg: 0.000562
+Iter 82 of 146 loss 0.0155, Img Sim: 0.015987, Reg: 0.000517
+Iter 83 of 146 loss 0.0097, Img Sim: 0.008213, Reg: 0.000538
+Iter 84 of 146 loss 0.0042, Img Sim: 0.003108, Reg: 0.000618
+Iter 85 of 146 loss 0.0056, Img Sim: 0.005337, Reg: 0.000663
+Iter 86 of 146 loss 0.0077, Img Sim: 0.007008, Reg: 0.000782
+Iter 87 of 146 loss 0.0085, Img Sim: 0.007457, Reg: 0.000704
+Iter 88 of 146 loss 0.0035, Img Sim: 0.002297, Reg: 0.000703
+Iter 89 of 146 loss 0.0048, Img Sim: 0.005515, Reg: 0.000653
+Iter 90 of 146 loss 0.0131, Img Sim: 0.012658, Reg: 0.000608
+Iter 91 of 146 loss 0.0050, Img Sim: 0.003873, Reg: 0.000711
+Iter 92 of 146 loss 0.0040, Img Sim: 0.003893, Reg: 0.000740
+Iter 93 of 146 loss 0.0038, Img Sim: 0.003489, Reg: 0.000872
+Iter 94 of 146 loss 0.0091, Img Sim: 0.007641, Reg: 0.000769
+Iter 95 of 146 loss 0.0052, Img Sim: 0.004334, Reg: 0.000714
+Iter 96 of 146 loss 0.0058, Img Sim: 0.006140, Reg: 0.000640
+Iter 97 of 146 loss 0.0053, Img Sim: 0.003889, Reg: 0.000715
+Iter 98 of 146 loss 0.0089, Img Sim: 0.008842, Reg: 0.000740
+Iter 99 of 146 loss 0.0039, Img Sim: 0.002546, Reg: 0.000722
+Iter 100 of 146 loss 0.0130, Img Sim: 0.013940, Reg: 0.000667
+Iter 101 of 146 loss 0.0083, Img Sim: 0.006964, Reg: 0.000567
+Iter 102 of 146 loss 0.0033, Img Sim: 0.002214, Reg: 0.000667
+Iter 103 of 146 loss 0.0117, Img Sim: 0.012418, Reg: 0.000627
+Iter 104 of 146 loss 0.0045, Img Sim: 0.003944, Reg: 0.000642
+Iter 105 of 146 loss 0.0205, Img Sim: 0.021090, Reg: 0.000727
+Iter 106 of 146 loss 0.0133, Img Sim: 0.013066, Reg: 0.000797
+Iter 107 of 146 loss 0.0070, Img Sim: 0.005651, Reg: 0.000869
+Iter 108 of 146 loss 0.0035, Img Sim: 0.002632, Reg: 0.000742
+Iter 109 of 146 loss 0.0153, Img Sim: 0.013283, Reg: 0.000857
+Iter 110 of 146 loss 0.0084, Img Sim: 0.007419, Reg: 0.000758
+Iter 111 of 146 loss 0.0071, Img Sim: 0.005624, Reg: 0.000582
+Iter 112 of 146 loss 0.0069, Img Sim: 0.007068, Reg: 0.000645
+Iter 113 of 146 loss 0.0094, Img Sim: 0.008504, Reg: 0.000774
+Iter 114 of 146 loss 0.0041, Img Sim: 0.003379, Reg: 0.000761
+Iter 115 of 146 loss 0.0101, Img Sim: 0.008960, Reg: 0.000774
+Iter 116 of 146 loss 0.0030, Img Sim: 0.001927, Reg: 0.000912
+Iter 117 of 146 loss 0.0042, Img Sim: 0.004350, Reg: 0.000680
+Iter 118 of 146 loss 0.0149, Img Sim: 0.013129, Reg: 0.000662
+Iter 119 of 146 loss 0.0061, Img Sim: 0.006187, Reg: 0.000729
+Iter 120 of 146 loss 0.0045, Img Sim: 0.003207, Reg: 0.000714
+Iter 121 of 146 loss 0.0049, Img Sim: 0.004526, Reg: 0.000784
+Iter 122 of 146 loss 0.0042, Img Sim: 0.003593, Reg: 0.000647
+Iter 123 of 146 loss 0.0056, Img Sim: 0.005035, Reg: 0.000725
+Iter 124 of 146 loss 0.0108, Img Sim: 0.009898, Reg: 0.000726
+Iter 125 of 146 loss 0.0045, Img Sim: 0.003229, Reg: 0.000668
+Iter 126 of 146 loss 0.0033, Img Sim: 0.003357, Reg: 0.000652
+Iter 127 of 146 loss 0.0095, Img Sim: 0.010195, Reg: 0.000631
+Iter 128 of 146 loss 0.0085, Img Sim: 0.008514, Reg: 0.000717
+Iter 129 of 146 loss 0.0052, Img Sim: 0.005595, Reg: 0.000748
+Iter 130 of 146 loss 0.0033, Img Sim: 0.003307, Reg: 0.000741
+Iter 131 of 146 loss 0.0058, Img Sim: 0.006339, Reg: 0.000770
+Iter 132 of 146 loss 0.0078, Img Sim: 0.006525, Reg: 0.000777
+Iter 133 of 146 loss 0.0049, Img Sim: 0.004552, Reg: 0.000694
+Iter 134 of 146 loss 0.0136, Img Sim: 0.011495, Reg: 0.000664
+Iter 135 of 146 loss 0.0095, Img Sim: 0.009598, Reg: 0.000768
+Iter 136 of 146 loss 0.0040, Img Sim: 0.003255, Reg: 0.000769
+Iter 137 of 146 loss 0.0171, Img Sim: 0.015137, Reg: 0.000853
+Iter 138 of 146 loss 0.0161, Img Sim: 0.016199, Reg: 0.000828
+Iter 139 of 146 loss 0.0096, Img Sim: 0.009866, Reg: 0.000819
+Iter 140 of 146 loss 0.0068, Img Sim: 0.005832, Reg: 0.000939
+Iter 141 of 146 loss 0.0043, Img Sim: 0.003353, Reg: 0.000797
+Iter 142 of 146 loss 0.0077, Img Sim: 0.007484, Reg: 0.000915
+Iter 143 of 146 loss 0.0056, Img Sim: 0.005013, Reg: 0.000736
+Iter 144 of 146 loss 0.0080, Img Sim: 0.006946, Reg: 0.000786
+Iter 145 of 146 loss 0.0087, Img Sim: 0.008768, Reg: 0.000768
+Iter 146 of 146 loss 0.0047, Img Sim: 0.003443, Reg: 0.000760
+Epoch 1 loss 0.0082
+0.8625540733337402
+0.7938042879104614
+0.8066389560699463
+0.8035663366317749
+0.7724751949310302
+0.7330675423145294
+0.6989599892071315
+0.699723906815052
+0.6936171054840088
+0.6766042232513427
+0.6809835108843717
+0.6669380366802216
+0.6634540007664607
+0.6701029964855739
+0.6853419184684754
+0.676061611622572
+0.6816152825075037
+0.6902803050147163
+0.6992577722198084
+0.7087257713079452
+0.7138689217113313
+0.708108975128694
+0.7115186945251797
+0.7056089664498965
+0.7102466750144959
+0.7158293746984922
+0.7096377765690839
+0.7166060890470233
+0.7221353465113146
+0.7207630852858226
+0.7188166879838512
+0.7226514481008053
+0.7205819866874001
+0.7250504774205825
+0.7293804832867213
+0.7255917770995034
+0.7220053511696893
+Training Starts
+Iter 1 of 146 loss 0.0073, Img Sim: 0.006281, Reg: 0.000886
+Iter 2 of 146 loss 0.0042, Img Sim: 0.002844, Reg: 0.000903
+Iter 3 of 146 loss 0.0215, Img Sim: 0.018648, Reg: 0.000892
+Iter 4 of 146 loss 0.0103, Img Sim: 0.008680, Reg: 0.000915
+Iter 5 of 146 loss 0.0042, Img Sim: 0.003584, Reg: 0.001018
+Iter 6 of 146 loss 0.0039, Img Sim: 0.002874, Reg: 0.000821
+Iter 7 of 146 loss 0.0046, Img Sim: 0.004127, Reg: 0.000686
+Iter 8 of 146 loss 0.0051, Img Sim: 0.004336, Reg: 0.000695
+Iter 9 of 146 loss 0.0104, Img Sim: 0.010349, Reg: 0.000660
+Iter 10 of 146 loss 0.0079, Img Sim: 0.007492, Reg: 0.000681
+Iter 11 of 146 loss 0.0045, Img Sim: 0.003865, Reg: 0.000613
+Iter 12 of 146 loss 0.0054, Img Sim: 0.005348, Reg: 0.000671
+Iter 13 of 146 loss 0.0043, Img Sim: 0.003090, Reg: 0.000742
+Iter 14 of 146 loss 0.0087, Img Sim: 0.007092, Reg: 0.000896
+Iter 15 of 146 loss 0.0072, Img Sim: 0.005902, Reg: 0.000842
+Iter 16 of 146 loss 0.0049, Img Sim: 0.003127, Reg: 0.000877
+Iter 17 of 146 loss 0.0093, Img Sim: 0.008032, Reg: 0.000742
+Iter 18 of 146 loss 0.0041, Img Sim: 0.003868, Reg: 0.000637
+Iter 19 of 146 loss 0.0043, Img Sim: 0.003099, Reg: 0.000686
+Iter 20 of 146 loss 0.0137, Img Sim: 0.012974, Reg: 0.000708
+Iter 21 of 146 loss 0.0109, Img Sim: 0.009310, Reg: 0.000656
+Iter 22 of 146 loss 0.0046, Img Sim: 0.003446, Reg: 0.000831
+Iter 23 of 146 loss 0.0028, Img Sim: 0.001571, Reg: 0.000960
+Iter 24 of 146 loss 0.0033, Img Sim: 0.002192, Reg: 0.000783
+Iter 25 of 146 loss 0.0152, Img Sim: 0.013187, Reg: 0.000870
+Iter 26 of 146 loss 0.0040, Img Sim: 0.003979, Reg: 0.000667
+Iter 27 of 146 loss 0.0021, Img Sim: 0.001631, Reg: 0.000667
+Iter 28 of 146 loss 0.0104, Img Sim: 0.009200, Reg: 0.000634
+Iter 29 of 146 loss 0.0130, Img Sim: 0.013340, Reg: 0.000628
+Iter 30 of 146 loss 0.0027, Img Sim: 0.002559, Reg: 0.000743
+Iter 31 of 146 loss 0.0053, Img Sim: 0.003859, Reg: 0.000919
+Iter 32 of 146 loss 0.0042, Img Sim: 0.003793, Reg: 0.000897
+Iter 33 of 146 loss 0.0029, Img Sim: 0.002671, Reg: 0.000898
+Iter 34 of 146 loss 0.0061, Img Sim: 0.005198, Reg: 0.000679
+Iter 35 of 146 loss 0.0059, Img Sim: 0.004429, Reg: 0.000636
+Iter 36 of 146 loss 0.0029, Img Sim: 0.002399, Reg: 0.000729
+Iter 37 of 146 loss 0.0058, Img Sim: 0.004799, Reg: 0.000803
+Iter 38 of 146 loss 0.0040, Img Sim: 0.002762, Reg: 0.000719
+Iter 39 of 146 loss 0.0058, Img Sim: 0.005919, Reg: 0.000735
+Iter 40 of 146 loss 0.0028, Img Sim: 0.002604, Reg: 0.000723
+Iter 41 of 146 loss 0.0103, Img Sim: 0.009148, Reg: 0.000966
+Iter 42 of 146 loss 0.0165, Img Sim: 0.014449, Reg: 0.000820
+Iter 43 of 146 loss 0.0243, Img Sim: 0.025453, Reg: 0.000893
+Iter 44 of 146 loss 0.0028, Img Sim: 0.002104, Reg: 0.000900
+Iter 45 of 146 loss 0.0102, Img Sim: 0.009908, Reg: 0.001003
+Iter 46 of 146 loss 0.0103, Img Sim: 0.011021, Reg: 0.000869
+Iter 47 of 146 loss 0.0049, Img Sim: 0.004657, Reg: 0.000774
+Iter 48 of 146 loss 0.0064, Img Sim: 0.005953, Reg: 0.000861
+Iter 49 of 146 loss 0.0087, Img Sim: 0.007433, Reg: 0.000798
+Iter 50 of 146 loss 0.0036, Img Sim: 0.002934, Reg: 0.000709
+Iter 51 of 146 loss 0.0081, Img Sim: 0.007206, Reg: 0.000839
+Iter 52 of 146 loss 0.0100, Img Sim: 0.009801, Reg: 0.000744
+Iter 53 of 146 loss 0.0054, Img Sim: 0.004905, Reg: 0.000836
+Iter 54 of 146 loss 0.0055, Img Sim: 0.004889, Reg: 0.000882
+Iter 55 of 146 loss 0.0092, Img Sim: 0.008556, Reg: 0.000951
+Iter 56 of 146 loss 0.0033, Img Sim: 0.002030, Reg: 0.000882
+Iter 57 of 146 loss 0.0052, Img Sim: 0.004481, Reg: 0.000767
+Iter 58 of 146 loss 0.0050, Img Sim: 0.005414, Reg: 0.000699
+Iter 59 of 146 loss 0.0041, Img Sim: 0.004539, Reg: 0.000689
+Iter 60 of 146 loss 0.0059, Img Sim: 0.004380, Reg: 0.000763
+Iter 61 of 146 loss 0.0047, Img Sim: 0.003695, Reg: 0.000847
+Iter 62 of 146 loss 0.0235, Img Sim: 0.020494, Reg: 0.000868
+Iter 63 of 146 loss 0.0064, Img Sim: 0.004787, Reg: 0.000955
+Iter 64 of 146 loss 0.0082, Img Sim: 0.006642, Reg: 0.000921
+Iter 65 of 146 loss 0.0170, Img Sim: 0.016715, Reg: 0.001008
+Iter 66 of 146 loss 0.0056, Img Sim: 0.005642, Reg: 0.001042
+Iter 67 of 146 loss 0.0079, Img Sim: 0.008196, Reg: 0.001064
+Iter 68 of 146 loss 0.0054, Img Sim: 0.005101, Reg: 0.001142
+Iter 69 of 146 loss 0.0040, Img Sim: 0.003374, Reg: 0.001085
+Iter 70 of 146 loss 0.0103, Img Sim: 0.010705, Reg: 0.000975
+Iter 71 of 146 loss 0.0025, Img Sim: 0.001591, Reg: 0.001013
+Iter 72 of 146 loss 0.0159, Img Sim: 0.013938, Reg: 0.000929
+Iter 73 of 146 loss 0.0057, Img Sim: 0.006022, Reg: 0.000943
+Iter 74 of 146 loss 0.0049, Img Sim: 0.004771, Reg: 0.000881
+Iter 75 of 146 loss 0.0057, Img Sim: 0.005264, Reg: 0.001223
+Iter 76 of 146 loss 0.0093, Img Sim: 0.007806, Reg: 0.000876
+Iter 77 of 146 loss 0.0076, Img Sim: 0.006560, Reg: 0.000948
+Iter 78 of 146 loss 0.0023, Img Sim: 0.001567, Reg: 0.000856
+Iter 79 of 146 loss 0.0055, Img Sim: 0.005162, Reg: 0.001027
+Iter 80 of 146 loss 0.0061, Img Sim: 0.005311, Reg: 0.000963
+Iter 81 of 146 loss 0.0051, Img Sim: 0.003668, Reg: 0.000837
+Iter 82 of 146 loss 0.0060, Img Sim: 0.004751, Reg: 0.000933
+Iter 83 of 146 loss 0.0038, Img Sim: 0.003067, Reg: 0.000798
+Iter 84 of 146 loss 0.0052, Img Sim: 0.003930, Reg: 0.000761
+Iter 85 of 146 loss 0.0037, Img Sim: 0.003471, Reg: 0.000774
+Iter 86 of 146 loss 0.0038, Img Sim: 0.003955, Reg: 0.000688
+Iter 87 of 146 loss 0.0046, Img Sim: 0.003785, Reg: 0.000620
+Iter 88 of 146 loss 0.0064, Img Sim: 0.005098, Reg: 0.000654
+Iter 89 of 146 loss 0.0017, Img Sim: 0.001252, Reg: 0.000789
+Iter 90 of 146 loss 0.0076, Img Sim: 0.006776, Reg: 0.000899
+Iter 91 of 146 loss 0.0042, Img Sim: 0.002935, Reg: 0.000894
+Iter 92 of 146 loss 0.0032, Img Sim: 0.002395, Reg: 0.000888
+Iter 93 of 146 loss 0.0116, Img Sim: 0.009370, Reg: 0.000849
+Iter 94 of 146 loss 0.0082, Img Sim: 0.008425, Reg: 0.001044
+Iter 95 of 146 loss 0.0135, Img Sim: 0.013202, Reg: 0.000856
+Iter 96 of 146 loss 0.0063, Img Sim: 0.006842, Reg: 0.000843
+Iter 97 of 146 loss 0.0125, Img Sim: 0.011711, Reg: 0.000913
+Iter 98 of 146 loss 0.0055, Img Sim: 0.004842, Reg: 0.000920
+Iter 99 of 146 loss 0.0041, Img Sim: 0.003300, Reg: 0.000913
+Iter 100 of 146 loss 0.0124, Img Sim: 0.011789, Reg: 0.001004
+Iter 101 of 146 loss 0.0117, Img Sim: 0.010346, Reg: 0.001045
+Iter 102 of 146 loss 0.0052, Img Sim: 0.004261, Reg: 0.001055
+Iter 103 of 146 loss 0.0033, Img Sim: 0.002299, Reg: 0.000927
+Iter 104 of 146 loss 0.0089, Img Sim: 0.007486, Reg: 0.001191
+Iter 105 of 146 loss 0.0068, Img Sim: 0.005126, Reg: 0.000992
+Iter 106 of 146 loss 0.0048, Img Sim: 0.004656, Reg: 0.000921
+Iter 107 of 146 loss 0.0087, Img Sim: 0.006375, Reg: 0.000992
+Iter 108 of 146 loss 0.0055, Img Sim: 0.005592, Reg: 0.000983
+Iter 109 of 146 loss 0.0053, Img Sim: 0.004535, Reg: 0.001123
+Iter 110 of 146 loss 0.0054, Img Sim: 0.004367, Reg: 0.000971
+Iter 111 of 146 loss 0.0076, Img Sim: 0.006230, Reg: 0.001035
+Iter 112 of 146 loss 0.0047, Img Sim: 0.003563, Reg: 0.001098
+Iter 113 of 146 loss 0.0070, Img Sim: 0.006376, Reg: 0.001185
+Iter 114 of 146 loss 0.0036, Img Sim: 0.002865, Reg: 0.001201
+Iter 115 of 146 loss 0.0048, Img Sim: 0.003560, Reg: 0.001030
+Iter 116 of 146 loss 0.0092, Img Sim: 0.007482, Reg: 0.001019
+Iter 117 of 146 loss 0.0046, Img Sim: 0.003390, Reg: 0.000871
+Iter 118 of 146 loss 0.0068, Img Sim: 0.006830, Reg: 0.000833
+Iter 119 of 146 loss 0.0075, Img Sim: 0.006171, Reg: 0.000930
+Iter 120 of 146 loss 0.0059, Img Sim: 0.005732, Reg: 0.000996
+Iter 121 of 146 loss 0.0052, Img Sim: 0.003957, Reg: 0.000847
+Iter 122 of 146 loss 0.0038, Img Sim: 0.003021, Reg: 0.000851
+Iter 123 of 146 loss 0.0040, Img Sim: 0.002542, Reg: 0.000797
+Iter 124 of 146 loss 0.0054, Img Sim: 0.004493, Reg: 0.000856
+Iter 125 of 146 loss 0.0036, Img Sim: 0.003411, Reg: 0.000732
+Iter 126 of 146 loss 0.0106, Img Sim: 0.011074, Reg: 0.000870
+Iter 127 of 146 loss 0.0047, Img Sim: 0.003878, Reg: 0.000953
+Iter 128 of 146 loss 0.0034, Img Sim: 0.002698, Reg: 0.000809
+Iter 129 of 146 loss 0.0145, Img Sim: 0.014691, Reg: 0.000923
+Iter 130 of 146 loss 0.0059, Img Sim: 0.005882, Reg: 0.000856
+Iter 131 of 146 loss 0.0059, Img Sim: 0.004304, Reg: 0.001041
+Iter 132 of 146 loss 0.0041, Img Sim: 0.003019, Reg: 0.000855
+Iter 133 of 146 loss 0.0107, Img Sim: 0.009528, Reg: 0.001087
+Iter 134 of 146 loss 0.0068, Img Sim: 0.006096, Reg: 0.001075
+Iter 135 of 146 loss 0.0202, Img Sim: 0.017835, Reg: 0.001105
+Iter 136 of 146 loss 0.0216, Img Sim: 0.023338, Reg: 0.001190
+Iter 137 of 146 loss 0.0052, Img Sim: 0.004585, Reg: 0.001055
+Iter 138 of 146 loss 0.0064, Img Sim: 0.004829, Reg: 0.001115
+Iter 139 of 146 loss 0.0192, Img Sim: 0.016362, Reg: 0.001427
+Iter 140 of 146 loss 0.0076, Img Sim: 0.007712, Reg: 0.001130
+Iter 141 of 146 loss 0.0071, Img Sim: 0.005269, Reg: 0.000970
+Iter 142 of 146 loss 0.0089, Img Sim: 0.006964, Reg: 0.000980
+Iter 143 of 146 loss 0.0063, Img Sim: 0.005212, Reg: 0.000900
+Iter 144 of 146 loss 0.0141, Img Sim: 0.014470, Reg: 0.001179
+Iter 145 of 146 loss 0.0089, Img Sim: 0.009188, Reg: 0.001019
+Iter 146 of 146 loss 0.0074, Img Sim: 0.006565, Reg: 0.000996
+Epoch 2 loss 0.0073
+0.778295636177063
+0.7555620074272156
+0.7840949098269144
+0.8004509061574936
+0.8001808285713196
+0.7521019379297892
+0.7291391747338432
+0.71568863093853
+0.7048176659478081
+0.6865011215209961
+0.6977984851056879
+0.6820004830757777
+0.6910291956021235
+0.6881360454218728
+0.6891947984695435
+0.680023618042469
+0.6907485863741707
+0.6989700198173523
+0.706918013723273
+0.7066677033901214
+0.7143191837129139
+0.7063738703727722
+0.7113736556923907
+0.7178418189287186
+0.7239188289642334
+0.7274951269993415
+0.7230602502822876
+0.7263463863304683
+0.7306336328901094
+0.734690268834432
+0.7389409522856435
+0.74196557700634
+0.7438690228895708
+0.7387312545495874
+0.7374273572649275
+0.7380497869518068
+0.7333959212174287
+Training Starts
+Iter 1 of 146 loss 0.0025, Img Sim: 0.001743, Reg: 0.000945
+Iter 2 of 146 loss 0.0035, Img Sim: 0.002454, Reg: 0.000940
+Iter 3 of 146 loss 0.0023, Img Sim: 0.001263, Reg: 0.000968
+Iter 4 of 146 loss 0.0024, Img Sim: 0.001774, Reg: 0.000743
+Iter 5 of 146 loss 0.0097, Img Sim: 0.008782, Reg: 0.000953
+Iter 6 of 146 loss 0.0106, Img Sim: 0.008958, Reg: 0.001181
+Iter 7 of 146 loss 0.0073, Img Sim: 0.007437, Reg: 0.001099
+Iter 8 of 146 loss 0.0077, Img Sim: 0.006946, Reg: 0.001235
+Iter 9 of 146 loss 0.0057, Img Sim: 0.003583, Reg: 0.001412
+Iter 10 of 146 loss 0.0040, Img Sim: 0.002826, Reg: 0.001252
+Iter 11 of 146 loss 0.0039, Img Sim: 0.003081, Reg: 0.001105
+Iter 12 of 146 loss 0.0023, Img Sim: 0.001365, Reg: 0.001004
+Iter 13 of 146 loss 0.0071, Img Sim: 0.005446, Reg: 0.000895
+Iter 14 of 146 loss 0.0025, Img Sim: 0.001934, Reg: 0.000824
+Iter 15 of 146 loss 0.0040, Img Sim: 0.003160, Reg: 0.000793
+Iter 16 of 146 loss 0.0064, Img Sim: 0.006771, Reg: 0.000821
+Iter 17 of 146 loss 0.0028, Img Sim: 0.002401, Reg: 0.000780
+Iter 18 of 146 loss 0.0074, Img Sim: 0.007755, Reg: 0.000914
+Iter 19 of 146 loss 0.0138, Img Sim: 0.011784, Reg: 0.000909
+Iter 20 of 146 loss 0.0050, Img Sim: 0.005416, Reg: 0.000988
+Iter 21 of 146 loss 0.0047, Img Sim: 0.004690, Reg: 0.001032
+Iter 22 of 146 loss 0.0162, Img Sim: 0.014538, Reg: 0.001027
+Iter 23 of 146 loss 0.0091, Img Sim: 0.006637, Reg: 0.001016
+Iter 24 of 146 loss 0.0147, Img Sim: 0.012015, Reg: 0.001165
+Iter 25 of 146 loss 0.0289, Img Sim: 0.029736, Reg: 0.001098
+Iter 26 of 146 loss 0.0108, Img Sim: 0.008616, Reg: 0.001232
+Iter 27 of 146 loss 0.0043, Img Sim: 0.002372, Reg: 0.001188
+Iter 28 of 146 loss 0.0057, Img Sim: 0.003962, Reg: 0.001127
+Iter 29 of 146 loss 0.0055, Img Sim: 0.004428, Reg: 0.001128
+Iter 30 of 146 loss 0.0070, Img Sim: 0.005491, Reg: 0.001077
+Iter 31 of 146 loss 0.0227, Img Sim: 0.019801, Reg: 0.001287
+Iter 32 of 146 loss 0.0099, Img Sim: 0.008354, Reg: 0.001112
+Iter 33 of 146 loss 0.0124, Img Sim: 0.010233, Reg: 0.001281
+Iter 34 of 146 loss 0.0051, Img Sim: 0.003645, Reg: 0.001187
+Iter 35 of 146 loss 0.0039, Img Sim: 0.003178, Reg: 0.000945
+Iter 36 of 146 loss 0.0020, Img Sim: 0.001193, Reg: 0.000920
+Iter 37 of 146 loss 0.0025, Img Sim: 0.001624, Reg: 0.000799
+Iter 38 of 146 loss 0.0048, Img Sim: 0.004944, Reg: 0.000794
+Iter 39 of 146 loss 0.0054, Img Sim: 0.005687, Reg: 0.000849
+Iter 40 of 146 loss 0.0019, Img Sim: 0.001301, Reg: 0.000715
+Iter 41 of 146 loss 0.0035, Img Sim: 0.002723, Reg: 0.000884
+Iter 42 of 146 loss 0.0059, Img Sim: 0.004496, Reg: 0.000858
+Iter 43 of 146 loss 0.0177, Img Sim: 0.017705, Reg: 0.001028
+Iter 44 of 146 loss 0.0072, Img Sim: 0.007803, Reg: 0.000965
+Iter 45 of 146 loss 0.0032, Img Sim: 0.002440, Reg: 0.000914
+Iter 46 of 146 loss 0.0022, Img Sim: 0.001719, Reg: 0.000791
+Iter 47 of 146 loss 0.0153, Img Sim: 0.014954, Reg: 0.001233
+Iter 48 of 146 loss 0.0029, Img Sim: 0.002256, Reg: 0.000888
+Iter 49 of 146 loss 0.0152, Img Sim: 0.013410, Reg: 0.001214
+Iter 50 of 146 loss 0.0129, Img Sim: 0.010473, Reg: 0.001172
+Iter 51 of 146 loss 0.0070, Img Sim: 0.004924, Reg: 0.001036
+Iter 52 of 146 loss 0.0045, Img Sim: 0.003258, Reg: 0.001171
+Iter 53 of 146 loss 0.0035, Img Sim: 0.003080, Reg: 0.001056
+Iter 54 of 146 loss 0.0042, Img Sim: 0.002578, Reg: 0.001258
+Iter 55 of 146 loss 0.0151, Img Sim: 0.013009, Reg: 0.001123
+Iter 56 of 146 loss 0.0026, Img Sim: 0.001934, Reg: 0.000910
+Iter 57 of 146 loss 0.0273, Img Sim: 0.023919, Reg: 0.001178
+Iter 58 of 146 loss 0.0030, Img Sim: 0.002413, Reg: 0.000987
+Iter 59 of 146 loss 0.0059, Img Sim: 0.005104, Reg: 0.001072
+Iter 60 of 146 loss 0.0030, Img Sim: 0.003052, Reg: 0.001061
+Iter 61 of 146 loss 0.0044, Img Sim: 0.003390, Reg: 0.000930
+Iter 62 of 146 loss 0.0034, Img Sim: 0.002974, Reg: 0.000877
+Iter 63 of 146 loss 0.0099, Img Sim: 0.007771, Reg: 0.001320
+Iter 64 of 146 loss 0.0049, Img Sim: 0.003035, Reg: 0.000933
+Iter 65 of 146 loss 0.0171, Img Sim: 0.017964, Reg: 0.001488
+Iter 66 of 146 loss 0.0050, Img Sim: 0.003304, Reg: 0.000866
+Iter 67 of 146 loss 0.0081, Img Sim: 0.005718, Reg: 0.001146
+Iter 68 of 146 loss 0.0096, Img Sim: 0.009376, Reg: 0.001103
+Iter 69 of 146 loss 0.0054, Img Sim: 0.005703, Reg: 0.001183
+Iter 70 of 146 loss 0.0019, Img Sim: 0.001690, Reg: 0.000980
+Iter 71 of 146 loss 0.0067, Img Sim: 0.005809, Reg: 0.001000
+Iter 72 of 146 loss 0.0034, Img Sim: 0.002746, Reg: 0.000994
+Iter 73 of 146 loss 0.0074, Img Sim: 0.004895, Reg: 0.001035
+Iter 74 of 146 loss 0.0056, Img Sim: 0.006123, Reg: 0.000983
+Iter 75 of 146 loss 0.0056, Img Sim: 0.004310, Reg: 0.001083
+Iter 76 of 146 loss 0.0047, Img Sim: 0.004290, Reg: 0.001222
+Iter 77 of 146 loss 0.0079, Img Sim: 0.006527, Reg: 0.001165
+Iter 78 of 146 loss 0.0194, Img Sim: 0.015909, Reg: 0.001213
+Iter 79 of 146 loss 0.0059, Img Sim: 0.004995, Reg: 0.001403
+Iter 80 of 146 loss 0.0045, Img Sim: 0.002785, Reg: 0.001139
+Iter 81 of 146 loss 0.0045, Img Sim: 0.003576, Reg: 0.001020
+Iter 82 of 146 loss 0.0089, Img Sim: 0.007585, Reg: 0.001168
+Iter 83 of 146 loss 0.0060, Img Sim: 0.004650, Reg: 0.001003
+Iter 84 of 146 loss 0.0039, Img Sim: 0.003156, Reg: 0.001116
+Iter 85 of 146 loss 0.0036, Img Sim: 0.002747, Reg: 0.001037
+Iter 86 of 146 loss 0.0048, Img Sim: 0.004290, Reg: 0.001026
+Iter 87 of 146 loss 0.0137, Img Sim: 0.013592, Reg: 0.001154
+Iter 88 of 146 loss 0.0060, Img Sim: 0.005332, Reg: 0.000987
+Iter 89 of 146 loss 0.0211, Img Sim: 0.017044, Reg: 0.001182
+Iter 90 of 146 loss 0.0038, Img Sim: 0.002841, Reg: 0.000904
+Iter 91 of 146 loss 0.0102, Img Sim: 0.008536, Reg: 0.001221
+Iter 92 of 146 loss 0.0031, Img Sim: 0.002497, Reg: 0.000987
+Iter 93 of 146 loss 0.0125, Img Sim: 0.012526, Reg: 0.001186
+Iter 94 of 146 loss 0.0082, Img Sim: 0.006426, Reg: 0.001125
+Iter 95 of 146 loss 0.0063, Img Sim: 0.004090, Reg: 0.001092
+Iter 96 of 146 loss 0.0051, Img Sim: 0.003419, Reg: 0.001308
+Iter 97 of 146 loss 0.0026, Img Sim: 0.001320, Reg: 0.001062
+Iter 98 of 146 loss 0.0051, Img Sim: 0.003940, Reg: 0.000955
+Iter 99 of 146 loss 0.0034, Img Sim: 0.002357, Reg: 0.000895
+Iter 100 of 146 loss 0.0029, Img Sim: 0.002244, Reg: 0.000918
+Iter 101 of 146 loss 0.0035, Img Sim: 0.002386, Reg: 0.000821
+Iter 102 of 146 loss 0.0124, Img Sim: 0.012712, Reg: 0.001002
+Iter 103 of 146 loss 0.0082, Img Sim: 0.006496, Reg: 0.000941
+Iter 104 of 146 loss 0.0024, Img Sim: 0.002085, Reg: 0.000836
+Iter 105 of 146 loss 0.0069, Img Sim: 0.005535, Reg: 0.001008
+Iter 106 of 146 loss 0.0054, Img Sim: 0.003778, Reg: 0.001137
+Iter 107 of 146 loss 0.0065, Img Sim: 0.005251, Reg: 0.001061
+Iter 108 of 146 loss 0.0050, Img Sim: 0.003512, Reg: 0.001200
+Iter 109 of 146 loss 0.0046, Img Sim: 0.003590, Reg: 0.001195
+Iter 110 of 146 loss 0.0085, Img Sim: 0.005989, Reg: 0.001028
+Iter 111 of 146 loss 0.0032, Img Sim: 0.003052, Reg: 0.001034
+Iter 112 of 146 loss 0.0045, Img Sim: 0.003519, Reg: 0.000911
+Iter 113 of 146 loss 0.0123, Img Sim: 0.012474, Reg: 0.001042
+Iter 114 of 146 loss 0.0035, Img Sim: 0.003448, Reg: 0.001011
+Iter 115 of 146 loss 0.0092, Img Sim: 0.007634, Reg: 0.001025
+Iter 116 of 146 loss 0.0033, Img Sim: 0.002733, Reg: 0.000995
+Iter 117 of 146 loss 0.0036, Img Sim: 0.003276, Reg: 0.000977
+Iter 118 of 146 loss 0.0035, Img Sim: 0.002922, Reg: 0.000895
+Iter 119 of 146 loss 0.0055, Img Sim: 0.004102, Reg: 0.000923
+Iter 120 of 146 loss 0.0111, Img Sim: 0.008612, Reg: 0.001163
+Iter 121 of 146 loss 0.0032, Img Sim: 0.001633, Reg: 0.000952
+Iter 122 of 146 loss 0.0064, Img Sim: 0.005414, Reg: 0.000922
+Iter 123 of 146 loss 0.0104, Img Sim: 0.008900, Reg: 0.001060
+Iter 124 of 146 loss 0.0039, Img Sim: 0.003610, Reg: 0.001032
+Iter 125 of 146 loss 0.0038, Img Sim: 0.002484, Reg: 0.000952
+Iter 126 of 146 loss 0.0054, Img Sim: 0.004416, Reg: 0.001021
+Iter 127 of 146 loss 0.0036, Img Sim: 0.002658, Reg: 0.001103
+Iter 128 of 146 loss 0.0053, Img Sim: 0.004571, Reg: 0.001076
+Iter 129 of 146 loss 0.0048, Img Sim: 0.003596, Reg: 0.000838
+Iter 130 of 146 loss 0.0094, Img Sim: 0.007491, Reg: 0.000929
+Iter 131 of 146 loss 0.0027, Img Sim: 0.002469, Reg: 0.000943
+Iter 132 of 146 loss 0.0036, Img Sim: 0.003163, Reg: 0.000928
+Iter 133 of 146 loss 0.0035, Img Sim: 0.002387, Reg: 0.001020
+Iter 134 of 146 loss 0.0019, Img Sim: 0.001043, Reg: 0.000859
+Iter 135 of 146 loss 0.0155, Img Sim: 0.012900, Reg: 0.001125
+Iter 136 of 146 loss 0.0053, Img Sim: 0.003312, Reg: 0.001292
+Iter 137 of 146 loss 0.0096, Img Sim: 0.009223, Reg: 0.001289
+Iter 138 of 146 loss 0.0074, Img Sim: 0.005076, Reg: 0.001119
+Iter 139 of 146 loss 0.0044, Img Sim: 0.003221, Reg: 0.000955
+Iter 140 of 146 loss 0.0096, Img Sim: 0.008840, Reg: 0.001307
+Iter 141 of 146 loss 0.0031, Img Sim: 0.003196, Reg: 0.001097
+Iter 142 of 146 loss 0.0129, Img Sim: 0.008932, Reg: 0.001316
+Iter 143 of 146 loss 0.0058, Img Sim: 0.004960, Reg: 0.001037
+Iter 144 of 146 loss 0.0015, Img Sim: 0.000939, Reg: 0.000831
+Iter 145 of 146 loss 0.0079, Img Sim: 0.009653, Reg: 0.001263
+Iter 146 of 146 loss 0.0060, Img Sim: 0.005036, Reg: 0.000926
+Epoch 3 loss 0.0069
+0.836235761642456
+0.6859864592552185
+0.715111513932546
+0.7365955859422684
+0.7474618911743164
+0.7062123616536459
+0.6762418661798749
+0.6756074205040932
+0.6811147398418851
+0.6721761703491211
+0.6792348785833879
+0.6790039340655009
+0.6790728752429669
+0.6846021924700055
+0.6880210002263387
+0.6944766715168953
+0.6857691407203674
+0.6941054099135928
+0.6871192361179151
+0.6979139655828476
+0.7067222169467381
+0.701629942113703
+0.7091635050980941
+0.7128604426980019
+0.7168629336357116
+0.7202131358476785
+0.7251933879322476
+0.7258433933768954
+0.7300153045818724
+0.7330084462960561
+0.7273781684137159
+0.7321792207658291
+0.7331651738195708
+0.73439481679131
+0.7379170792443411
+0.7399291495482127
+0.7344633872444565
+Training Starts
+Iter 1 of 146 loss 0.0026, Img Sim: 0.002909, Reg: 0.000976
+Iter 2 of 146 loss 0.0084, Img Sim: 0.005999, Reg: 0.001011
+Iter 3 of 146 loss 0.0031, Img Sim: 0.001984, Reg: 0.001067
+Iter 4 of 146 loss 0.0024, Img Sim: 0.002117, Reg: 0.000884
+Iter 5 of 146 loss 0.0103, Img Sim: 0.007423, Reg: 0.001098
+Iter 6 of 146 loss 0.0042, Img Sim: 0.004003, Reg: 0.000925
+Iter 7 of 146 loss 0.0077, Img Sim: 0.005714, Reg: 0.001147
+Iter 8 of 146 loss 0.0029, Img Sim: 0.001604, Reg: 0.001104
+Iter 9 of 146 loss 0.0034, Img Sim: 0.002450, Reg: 0.001013
+Iter 10 of 146 loss 0.0166, Img Sim: 0.017046, Reg: 0.001119
+Iter 11 of 146 loss 0.0008, Img Sim: 0.000296, Reg: 0.000600
+Iter 12 of 146 loss 0.0044, Img Sim: 0.003566, Reg: 0.000976
+Iter 13 of 146 loss 0.0071, Img Sim: 0.005833, Reg: 0.001262
+Iter 14 of 146 loss 0.0030, Img Sim: 0.002152, Reg: 0.000903
+Iter 15 of 146 loss 0.0093, Img Sim: 0.008932, Reg: 0.001107
+Iter 16 of 146 loss 0.0042, Img Sim: 0.003327, Reg: 0.000804
+Iter 17 of 146 loss 0.0042, Img Sim: 0.003081, Reg: 0.000920
+Iter 18 of 146 loss 0.0113, Img Sim: 0.009788, Reg: 0.001180
+Iter 19 of 146 loss 0.0051, Img Sim: 0.003435, Reg: 0.001153
+Iter 20 of 146 loss 0.0073, Img Sim: 0.005176, Reg: 0.001019
+Iter 21 of 146 loss 0.0028, Img Sim: 0.001950, Reg: 0.000801
+Iter 22 of 146 loss 0.0050, Img Sim: 0.003822, Reg: 0.001189
+Iter 23 of 146 loss 0.0054, Img Sim: 0.004090, Reg: 0.001093
+Iter 24 of 146 loss 0.0051, Img Sim: 0.003801, Reg: 0.000834
+Iter 25 of 146 loss 0.0173, Img Sim: 0.014656, Reg: 0.001210
+Iter 26 of 146 loss 0.0129, Img Sim: 0.012599, Reg: 0.001233
+Iter 27 of 146 loss 0.0030, Img Sim: 0.002272, Reg: 0.000826
+Iter 28 of 146 loss 0.0091, Img Sim: 0.006942, Reg: 0.001179
+Iter 29 of 146 loss 0.0077, Img Sim: 0.005570, Reg: 0.001236
+Iter 30 of 146 loss 0.0125, Img Sim: 0.011645, Reg: 0.001317
+Iter 31 of 146 loss 0.0055, Img Sim: 0.004447, Reg: 0.000978
+Iter 32 of 146 loss 0.0096, Img Sim: 0.008391, Reg: 0.001220
+Iter 33 of 146 loss 0.0127, Img Sim: 0.010608, Reg: 0.001123
+Iter 34 of 146 loss 0.0071, Img Sim: 0.005227, Reg: 0.001135
+Iter 35 of 146 loss 0.0030, Img Sim: 0.002278, Reg: 0.001073
+Iter 36 of 146 loss 0.0058, Img Sim: 0.004622, Reg: 0.001109
+Iter 37 of 146 loss 0.0156, Img Sim: 0.014655, Reg: 0.001097
+Iter 38 of 146 loss 0.0044, Img Sim: 0.002835, Reg: 0.000999
+Iter 39 of 146 loss 0.0036, Img Sim: 0.002973, Reg: 0.000914
+Iter 40 of 146 loss 0.0040, Img Sim: 0.003941, Reg: 0.000808
+Iter 41 of 146 loss 0.0043, Img Sim: 0.004359, Reg: 0.000926
+Iter 42 of 146 loss 0.0071, Img Sim: 0.004669, Reg: 0.001032
+Iter 43 of 146 loss 0.0044, Img Sim: 0.002780, Reg: 0.000894
+Iter 44 of 146 loss 0.0027, Img Sim: 0.002397, Reg: 0.000712
+Iter 45 of 146 loss 0.0050, Img Sim: 0.003979, Reg: 0.000873
+Iter 46 of 146 loss 0.0041, Img Sim: 0.003657, Reg: 0.000982
+Iter 47 of 146 loss 0.0104, Img Sim: 0.009441, Reg: 0.001103
+Iter 48 of 146 loss 0.0043, Img Sim: 0.004439, Reg: 0.000791
+Iter 49 of 146 loss 0.0064, Img Sim: 0.006562, Reg: 0.001008
+Iter 50 of 146 loss 0.0038, Img Sim: 0.003448, Reg: 0.000813
+Iter 51 of 146 loss 0.0057, Img Sim: 0.004354, Reg: 0.000784
+Iter 52 of 146 loss 0.0073, Img Sim: 0.007570, Reg: 0.001080
+Iter 53 of 146 loss 0.0033, Img Sim: 0.002582, Reg: 0.000815
+Iter 54 of 146 loss 0.0067, Img Sim: 0.004524, Reg: 0.001092
+Iter 55 of 146 loss 0.0106, Img Sim: 0.010797, Reg: 0.001184
+Iter 56 of 146 loss 0.0066, Img Sim: 0.005240, Reg: 0.000864
+Iter 57 of 146 loss 0.0020, Img Sim: 0.001907, Reg: 0.000901
+Iter 58 of 146 loss 0.0033, Img Sim: 0.003486, Reg: 0.001210
+Iter 59 of 146 loss 0.0064, Img Sim: 0.007511, Reg: 0.001105
+Iter 60 of 146 loss 0.0072, Img Sim: 0.005494, Reg: 0.000852
+Iter 61 of 146 loss 0.0091, Img Sim: 0.006833, Reg: 0.001151
+Iter 62 of 146 loss 0.0032, Img Sim: 0.002227, Reg: 0.000872
+Iter 63 of 146 loss 0.0071, Img Sim: 0.005116, Reg: 0.001222
+Iter 64 of 146 loss 0.0059, Img Sim: 0.005249, Reg: 0.001065
+Iter 65 of 146 loss 0.0066, Img Sim: 0.004640, Reg: 0.001132
+Iter 66 of 146 loss 0.0031, Img Sim: 0.001633, Reg: 0.000904
+Iter 67 of 146 loss 0.0036, Img Sim: 0.002971, Reg: 0.001143
+Iter 68 of 146 loss 0.0043, Img Sim: 0.002991, Reg: 0.000700
+Iter 69 of 146 loss 0.0056, Img Sim: 0.004480, Reg: 0.001065
+Iter 70 of 146 loss 0.0130, Img Sim: 0.009304, Reg: 0.001339
+Iter 71 of 146 loss 0.0021, Img Sim: 0.000856, Reg: 0.001037
+Iter 72 of 146 loss 0.0100, Img Sim: 0.007275, Reg: 0.001332
+Iter 73 of 146 loss 0.0132, Img Sim: 0.010788, Reg: 0.001103
+Iter 74 of 146 loss 0.0101, Img Sim: 0.007627, Reg: 0.001297
+Iter 75 of 146 loss 0.0079, Img Sim: 0.006570, Reg: 0.001285
+Iter 76 of 146 loss 0.0096, Img Sim: 0.008996, Reg: 0.001130
+Iter 77 of 146 loss 0.0175, Img Sim: 0.015423, Reg: 0.001211
+Iter 78 of 146 loss 0.0028, Img Sim: 0.001881, Reg: 0.000862
+Iter 79 of 146 loss 0.0094, Img Sim: 0.007430, Reg: 0.001621
+Iter 80 of 146 loss 0.0052, Img Sim: 0.003377, Reg: 0.001611
+Iter 81 of 146 loss 0.0023, Img Sim: 0.001695, Reg: 0.000775
+Iter 82 of 146 loss 0.0031, Img Sim: 0.002302, Reg: 0.001104
+Iter 83 of 146 loss 0.0060, Img Sim: 0.006008, Reg: 0.000946
+Iter 84 of 146 loss 0.0045, Img Sim: 0.003156, Reg: 0.001054
+Iter 85 of 146 loss 0.0032, Img Sim: 0.002199, Reg: 0.001024
+Iter 86 of 146 loss 0.0049, Img Sim: 0.004200, Reg: 0.000824
+Iter 87 of 146 loss 0.0213, Img Sim: 0.022944, Reg: 0.001405
+Iter 88 of 146 loss 0.0043, Img Sim: 0.002489, Reg: 0.000982
+Iter 89 of 146 loss 0.0087, Img Sim: 0.007389, Reg: 0.001255
+Iter 90 of 146 loss 0.0080, Img Sim: 0.007099, Reg: 0.000967
+Iter 91 of 146 loss 0.0129, Img Sim: 0.010428, Reg: 0.001267
+Iter 92 of 146 loss 0.0063, Img Sim: 0.006188, Reg: 0.001326
+Iter 93 of 146 loss 0.0019, Img Sim: 0.001154, Reg: 0.000840
+Iter 94 of 146 loss 0.0020, Img Sim: 0.001420, Reg: 0.000792
+Iter 95 of 146 loss 0.0083, Img Sim: 0.007552, Reg: 0.001106
+Iter 96 of 146 loss 0.0025, Img Sim: 0.002258, Reg: 0.000628
+Iter 97 of 146 loss 0.0052, Img Sim: 0.004660, Reg: 0.000898
+Iter 98 of 146 loss 0.0089, Img Sim: 0.006977, Reg: 0.000987
+Iter 99 of 146 loss 0.0047, Img Sim: 0.003928, Reg: 0.000879
+Iter 100 of 146 loss 0.0031, Img Sim: 0.001869, Reg: 0.000928
+Iter 101 of 146 loss 0.0047, Img Sim: 0.003059, Reg: 0.001139
+Iter 102 of 146 loss 0.0018, Img Sim: 0.001329, Reg: 0.000837
+Iter 103 of 146 loss 0.0106, Img Sim: 0.010649, Reg: 0.001282
+Iter 104 of 146 loss 0.0029, Img Sim: 0.002295, Reg: 0.000690
+Iter 105 of 146 loss 0.0124, Img Sim: 0.009019, Reg: 0.001163
+Iter 106 of 146 loss 0.0052, Img Sim: 0.003907, Reg: 0.000873
+Iter 107 of 146 loss 0.0110, Img Sim: 0.009539, Reg: 0.001035
+Iter 108 of 146 loss 0.0062, Img Sim: 0.006005, Reg: 0.001411
+Iter 109 of 146 loss 0.0037, Img Sim: 0.003104, Reg: 0.001341
+Iter 110 of 146 loss 0.0118, Img Sim: 0.011570, Reg: 0.001434
+Iter 111 of 146 loss 0.0072, Img Sim: 0.007039, Reg: 0.001303
+Iter 112 of 146 loss 0.0048, Img Sim: 0.004569, Reg: 0.001376
+Iter 113 of 146 loss 0.0038, Img Sim: 0.003231, Reg: 0.000914
+Iter 114 of 146 loss 0.0135, Img Sim: 0.010938, Reg: 0.001349
+Iter 115 of 146 loss 0.0133, Img Sim: 0.010369, Reg: 0.001352
+Iter 116 of 146 loss 0.0037, Img Sim: 0.002746, Reg: 0.000853
+Iter 117 of 146 loss 0.0051, Img Sim: 0.004393, Reg: 0.000800
+Iter 118 of 146 loss 0.0154, Img Sim: 0.014480, Reg: 0.001215
+Iter 119 of 146 loss 0.0072, Img Sim: 0.006278, Reg: 0.001068
+Iter 120 of 146 loss 0.0097, Img Sim: 0.009704, Reg: 0.001236
+Iter 121 of 146 loss 0.0033, Img Sim: 0.002550, Reg: 0.001217
+Iter 122 of 146 loss 0.0068, Img Sim: 0.006226, Reg: 0.001153
+Iter 123 of 146 loss 0.0105, Img Sim: 0.010371, Reg: 0.001383
+Iter 124 of 146 loss 0.0032, Img Sim: 0.002973, Reg: 0.001019
+Iter 125 of 146 loss 0.0060, Img Sim: 0.004427, Reg: 0.001101
+Iter 126 of 146 loss 0.0088, Img Sim: 0.006274, Reg: 0.001199
+Iter 127 of 146 loss 0.0040, Img Sim: 0.003221, Reg: 0.000930
+Iter 128 of 146 loss 0.0086, Img Sim: 0.005936, Reg: 0.001260
+Iter 129 of 146 loss 0.0099, Img Sim: 0.007366, Reg: 0.001371
+Iter 130 of 146 loss 0.0168, Img Sim: 0.012611, Reg: 0.001408
+Iter 131 of 146 loss 0.0102, Img Sim: 0.010049, Reg: 0.001462
+Iter 132 of 146 loss 0.0112, Img Sim: 0.006687, Reg: 0.001685
+Iter 133 of 146 loss 0.0032, Img Sim: 0.001813, Reg: 0.000863
+Iter 134 of 146 loss 0.0043, Img Sim: 0.003083, Reg: 0.000957
+Iter 135 of 146 loss 0.0040, Img Sim: 0.003340, Reg: 0.000952
+Iter 136 of 146 loss 0.0059, Img Sim: 0.003731, Reg: 0.001251
+Iter 137 of 146 loss 0.0035, Img Sim: 0.003658, Reg: 0.001645
+Iter 138 of 146 loss 0.0046, Img Sim: 0.002574, Reg: 0.000962
+Iter 139 of 146 loss 0.0041, Img Sim: 0.003775, Reg: 0.001045
+Iter 140 of 146 loss 0.0020, Img Sim: 0.001123, Reg: 0.000892
+Iter 141 of 146 loss 0.0099, Img Sim: 0.008383, Reg: 0.001266
+Iter 142 of 146 loss 0.0071, Img Sim: 0.007109, Reg: 0.001392
+Iter 143 of 146 loss 0.0121, Img Sim: 0.009925, Reg: 0.001486
+Iter 144 of 146 loss 0.0043, Img Sim: 0.002744, Reg: 0.001467
+Iter 145 of 146 loss 0.0040, Img Sim: 0.002364, Reg: 0.001374
+Iter 146 of 146 loss 0.0078, Img Sim: 0.006424, Reg: 0.001572
+Epoch 4 loss 0.0067
+0.7878336310386658
+0.8063851892948151
+0.8197583158810934
+0.8305682688951492
+0.791579294204712
+0.8008606632550558
+0.7586074045726231
+0.7456502839922905
+0.7434220910072327
+0.7297242105007171
+0.7462663162838329
+0.7268886218468348
+0.7303629884353051
+0.7320169167859214
+0.7275113423665365
+0.7333119362592697
+0.7451296764261582
+0.748945845497979
+0.7538285725995114
+0.7603056937456131
+0.7655315683001563
+0.7619949877262115
+0.765823553437772
+0.7693190276622772
+0.7747161722183228
+0.7759924760231605
+0.7744152788762693
+0.7751782217196056
+0.7787807419382292
+0.7762830595175425
+0.7771394598868585
+0.7734402716159821
+0.7742712317091046
+0.7774647579473608
+0.7754270843097142
+0.7708540939622455
+0.7659616953617817
+replacing 0 with 4
+save epoch_4_atlas.npy epoch 4
+save epoch_4_atlas_segs.npy epoch 4
+save epoch_4_warped.npy epoch 4
+save epoch_4_warped_segs.npy epoch 4
+save epoch_4_input.npy epoch 4
+save epoch_4_input_segs.npy epoch 4
+save epoch_4_flow.npy epoch 4
+save epoch_4_grid.npy epoch 4
+delete files epoch 0
+delete files epoch 0
+delete files epoch 0
+delete files epoch 0
+delete files epoch 0
+delete files epoch 0
+delete files epoch 0
+delete files epoch 0
+Training Starts
+Iter 1 of 146 loss 0.0260, Img Sim: 0.022745, Reg: 0.001619
+Iter 2 of 146 loss 0.0099, Img Sim: 0.008634, Reg: 0.001383
+Iter 3 of 146 loss 0.0072, Img Sim: 0.006311, Reg: 0.001230
+Iter 4 of 146 loss 0.0048, Img Sim: 0.004962, Reg: 0.001043
+Iter 5 of 146 loss 0.0098, Img Sim: 0.007070, Reg: 0.001241
+Iter 6 of 146 loss 0.0083, Img Sim: 0.005950, Reg: 0.001086
+Iter 7 of 146 loss 0.0089, Img Sim: 0.006414, Reg: 0.001155
+Iter 8 of 146 loss 0.0040, Img Sim: 0.003192, Reg: 0.000961
+Iter 9 of 146 loss 0.0085, Img Sim: 0.007433, Reg: 0.001020
+Iter 10 of 146 loss 0.0088, Img Sim: 0.009488, Reg: 0.001273
+Iter 11 of 146 loss 0.0047, Img Sim: 0.002801, Reg: 0.001118
+Iter 12 of 146 loss 0.0058, Img Sim: 0.003461, Reg: 0.001399
+Iter 13 of 146 loss 0.0051, Img Sim: 0.004764, Reg: 0.001322
+Iter 14 of 146 loss 0.0046, Img Sim: 0.002963, Reg: 0.001114
+Iter 15 of 146 loss 0.0073, Img Sim: 0.007588, Reg: 0.001312
+Iter 16 of 146 loss 0.0043, Img Sim: 0.003536, Reg: 0.001170
+Iter 17 of 146 loss 0.0103, Img Sim: 0.007214, Reg: 0.001273
+Iter 18 of 146 loss 0.0165, Img Sim: 0.014204, Reg: 0.001239
+Iter 19 of 146 loss 0.0044, Img Sim: 0.003989, Reg: 0.001250
+Iter 20 of 146 loss 0.0051, Img Sim: 0.004018, Reg: 0.001064
+Iter 21 of 146 loss 0.0056, Img Sim: 0.003515, Reg: 0.001002
+Iter 22 of 146 loss 0.0036, Img Sim: 0.002306, Reg: 0.001040
+Iter 23 of 146 loss 0.0056, Img Sim: 0.005958, Reg: 0.001065
+Iter 24 of 146 loss 0.0019, Img Sim: 0.001466, Reg: 0.000949
+Iter 25 of 146 loss 0.0094, Img Sim: 0.007733, Reg: 0.001203
+Iter 26 of 146 loss 0.0039, Img Sim: 0.002319, Reg: 0.000833
+Iter 27 of 146 loss 0.0185, Img Sim: 0.017288, Reg: 0.001323
+Iter 28 of 146 loss 0.0022, Img Sim: 0.001596, Reg: 0.000819
+Iter 29 of 146 loss 0.0016, Img Sim: 0.000903, Reg: 0.000940
+Iter 30 of 146 loss 0.0022, Img Sim: 0.001234, Reg: 0.000923
+Iter 31 of 146 loss 0.0117, Img Sim: 0.011923, Reg: 0.001493
+Iter 32 of 146 loss 0.0067, Img Sim: 0.004895, Reg: 0.001004
+Iter 33 of 146 loss 0.0048, Img Sim: 0.004049, Reg: 0.001168
+Iter 34 of 146 loss 0.0028, Img Sim: 0.001689, Reg: 0.000920
+Iter 35 of 146 loss 0.0018, Img Sim: 0.001066, Reg: 0.000825
+Iter 36 of 146 loss 0.0145, Img Sim: 0.012047, Reg: 0.001748
+Iter 37 of 146 loss 0.0064, Img Sim: 0.005338, Reg: 0.001651
+Iter 38 of 146 loss 0.0048, Img Sim: 0.003902, Reg: 0.000977
+Iter 39 of 146 loss 0.0058, Img Sim: 0.005093, Reg: 0.000928
+Iter 40 of 146 loss 0.0072, Img Sim: 0.004652, Reg: 0.001323
+Iter 41 of 146 loss 0.0048, Img Sim: 0.004029, Reg: 0.000870
+Iter 42 of 146 loss 0.0136, Img Sim: 0.010322, Reg: 0.001409
+Iter 43 of 146 loss 0.0053, Img Sim: 0.004275, Reg: 0.001383
+Iter 44 of 146 loss 0.0054, Img Sim: 0.004460, Reg: 0.001091
+Iter 45 of 146 loss 0.0054, Img Sim: 0.004550, Reg: 0.001408
+Iter 46 of 146 loss 0.0051, Img Sim: 0.004275, Reg: 0.001146
+Iter 47 of 146 loss 0.0129, Img Sim: 0.010100, Reg: 0.001539
+Iter 48 of 146 loss 0.0251, Img Sim: 0.020828, Reg: 0.001650
+Iter 49 of 146 loss 0.0020, Img Sim: 0.001204, Reg: 0.000819
+Iter 50 of 146 loss 0.0041, Img Sim: 0.002559, Reg: 0.001161
+Iter 51 of 146 loss 0.0094, Img Sim: 0.006850, Reg: 0.001601
+Iter 52 of 146 loss 0.0065, Img Sim: 0.005501, Reg: 0.001219
+Iter 53 of 146 loss 0.0066, Img Sim: 0.005683, Reg: 0.001074
+Iter 54 of 146 loss 0.0101, Img Sim: 0.007440, Reg: 0.001430
+Iter 55 of 146 loss 0.0037, Img Sim: 0.002516, Reg: 0.000875
+Iter 56 of 146 loss 0.0056, Img Sim: 0.005738, Reg: 0.001180
+Iter 57 of 146 loss 0.0031, Img Sim: 0.001688, Reg: 0.001171
+Iter 58 of 146 loss 0.0028, Img Sim: 0.002526, Reg: 0.000682
+Iter 59 of 146 loss 0.0024, Img Sim: 0.001607, Reg: 0.000878
+Iter 60 of 146 loss 0.0038, Img Sim: 0.002223, Reg: 0.001213
+Iter 61 of 146 loss 0.0084, Img Sim: 0.006076, Reg: 0.001350
+Iter 62 of 146 loss 0.0034, Img Sim: 0.003146, Reg: 0.001023
+Iter 63 of 146 loss 0.0073, Img Sim: 0.007826, Reg: 0.001507
+Iter 64 of 146 loss 0.0229, Img Sim: 0.018520, Reg: 0.001432
+Iter 65 of 146 loss 0.0061, Img Sim: 0.004140, Reg: 0.001364
+Iter 66 of 146 loss 0.0059, Img Sim: 0.004650, Reg: 0.001444
+Iter 67 of 146 loss 0.0041, Img Sim: 0.003056, Reg: 0.001258
+Iter 68 of 146 loss 0.0269, Img Sim: 0.021462, Reg: 0.001573
+Iter 69 of 146 loss 0.0039, Img Sim: 0.002757, Reg: 0.001417
+Iter 70 of 146 loss 0.0040, Img Sim: 0.002982, Reg: 0.000833
+Iter 71 of 146 loss 0.0036, Img Sim: 0.003012, Reg: 0.001424
+Iter 72 of 146 loss 0.0035, Img Sim: 0.002524, Reg: 0.000926
+Iter 73 of 146 loss 0.0059, Img Sim: 0.005405, Reg: 0.001287
+Iter 74 of 146 loss 0.0038, Img Sim: 0.002845, Reg: 0.001052
+Iter 75 of 146 loss 0.0060, Img Sim: 0.004370, Reg: 0.001199
+Iter 76 of 146 loss 0.0071, Img Sim: 0.005286, Reg: 0.001362
+Iter 77 of 146 loss 0.0062, Img Sim: 0.004852, Reg: 0.001159
+Iter 78 of 146 loss 0.0048, Img Sim: 0.003311, Reg: 0.000824
+Iter 79 of 146 loss 0.0073, Img Sim: 0.006068, Reg: 0.001402
+Iter 80 of 146 loss 0.0073, Img Sim: 0.006593, Reg: 0.001266
+Iter 81 of 146 loss 0.0099, Img Sim: 0.006838, Reg: 0.001393
+Iter 82 of 146 loss 0.0075, Img Sim: 0.005933, Reg: 0.001328
+Iter 83 of 146 loss 0.0132, Img Sim: 0.010770, Reg: 0.001181
+Iter 84 of 146 loss 0.0029, Img Sim: 0.002487, Reg: 0.000932
+Iter 85 of 146 loss 0.0087, Img Sim: 0.009111, Reg: 0.001244
+Iter 86 of 146 loss 0.0031, Img Sim: 0.002261, Reg: 0.000936
+Iter 87 of 146 loss 0.0086, Img Sim: 0.007582, Reg: 0.001118
+Iter 88 of 146 loss 0.0033, Img Sim: 0.003358, Reg: 0.000963
+Iter 89 of 146 loss 0.0068, Img Sim: 0.006367, Reg: 0.001067
+Iter 90 of 146 loss 0.0023, Img Sim: 0.001571, Reg: 0.000869
+Iter 91 of 146 loss 0.0024, Img Sim: 0.001554, Reg: 0.001026
+Iter 92 of 146 loss 0.0107, Img Sim: 0.012470, Reg: 0.001407
+Iter 93 of 146 loss 0.0048, Img Sim: 0.004340, Reg: 0.001281
+Iter 94 of 146 loss 0.0046, Img Sim: 0.004112, Reg: 0.000910
+Iter 95 of 146 loss 0.0022, Img Sim: 0.001914, Reg: 0.000811
+Iter 96 of 146 loss 0.0069, Img Sim: 0.005388, Reg: 0.001328
+Iter 97 of 146 loss 0.0040, Img Sim: 0.002664, Reg: 0.000889
+Iter 98 of 146 loss 0.0037, Img Sim: 0.002947, Reg: 0.000870
+Iter 99 of 146 loss 0.0046, Img Sim: 0.003662, Reg: 0.000852
+Iter 100 of 146 loss 0.0033, Img Sim: 0.002819, Reg: 0.001065
+Iter 101 of 146 loss 0.0052, Img Sim: 0.003744, Reg: 0.001086
+Iter 102 of 146 loss 0.0097, Img Sim: 0.007448, Reg: 0.001377
+Iter 103 of 146 loss 0.0058, Img Sim: 0.004568, Reg: 0.001017
+Iter 104 of 146 loss 0.0018, Img Sim: 0.001398, Reg: 0.000806
+Iter 105 of 146 loss 0.0124, Img Sim: 0.011897, Reg: 0.000866
+Iter 106 of 146 loss 0.0031, Img Sim: 0.002973, Reg: 0.001027
+Iter 107 of 146 loss 0.0048, Img Sim: 0.003758, Reg: 0.000762
+Iter 108 of 146 loss 0.0052, Img Sim: 0.004118, Reg: 0.000663
+Iter 109 of 146 loss 0.0030, Img Sim: 0.002794, Reg: 0.000843
+Iter 110 of 146 loss 0.0028, Img Sim: 0.001937, Reg: 0.000660
+Iter 111 of 146 loss 0.0055, Img Sim: 0.004541, Reg: 0.000737
+Iter 112 of 146 loss 0.0029, Img Sim: 0.001858, Reg: 0.000617
